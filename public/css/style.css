@@ -1,34 +1,20 @@
 body {
-    background-color: black !important;
+    background-color: black;
+    background-image: url('/kuvat/havu_ruskea.svg');
+    background-size: 10%;
+    background-position: center; 
+    background-repeat: no-repeat;
     color: white;
     font-family: Arial, sans-serif;
+    font-size: large;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     text-align: center; 
 }
 
-
-iframe:first-of-type {
-    width: 80%; 
-    max-width: 700px; 
-    margin: 20px auto; 
-    display: block;
-    height: auto;
-}
-
-
-iframe:not(:first-of-type) {
-    width: 200px;
-    height: auto;
-    margin: 10px; 
-    border: 1px solid #444;
-    border-radius: 5px;
-    display: inline-block;
-}
