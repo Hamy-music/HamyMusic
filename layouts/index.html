@@ -1,67 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hämy Music</title>
-    <link rel="stylesheet" href="/HamyMusic/static/css/custom.css">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 </head>
-
 <body>
-    <main class="container">
-        <header>
-            <h1>Hämy Music</h1>
-        </header>
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+    </header>
 
-        <div id="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0REyF3Lf5b0" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-
-        <div id="scrollable-videos">
-            <iframe width="200" height="113" src="https://www.youtube.com/embed/kjFzJ8qIYWI" frameborder="0"
-                allowfullscreen></iframe>
-            <iframe width="200" height="113" src="https://www.youtube.com/embed/UfKH1HLMdpE" frameborder="0"
-                allowfullscreen></iframe>
-            <iframe width="200" height="113" src="https://www.youtube.com/embed/NqRaE8mid3A" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-
-        <div class="scroll-dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <footer>
-            <p>&copy; Hämy Music</p>
-        </footer>
+    <main>
+        {{ .Content }}
     </main>
 
-    <script>
-        const dots = document.querySelectorAll('.dot');
-        const slider = document.querySelector('#scrollable-videos');
-
-        let currentIndex = 0;
-
-        function currentSlide(index) {
-            currentIndex = index - 1;
-            updateSlider();
-        }
-
-        function updateSlider() {
-            slider.scrollTo({
-                left: currentIndex * (200 + 10),
-                behavior: 'smooth'
-            });
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[currentIndex].classList.add('active');
-        }
-
-        dots[currentIndex].classList.add('active');
-    </script>
-
+    <footer>
+        <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
+    </footer>
 </body>
-
 </html>
