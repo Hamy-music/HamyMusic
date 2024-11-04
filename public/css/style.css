@@ -70,3 +70,19 @@ figure {
     font-weight: bold;
 }
 
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover img {
+    transform: scale(1.05);
+}

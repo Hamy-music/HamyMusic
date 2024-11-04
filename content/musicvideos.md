@@ -1,11 +1,16 @@
 ---
 title: "Music Videos"
+videos:
+  - "uePq_efTU3s"
+  - "kjFzJ8qIYWI"
+  - "UfKH1HLMdpE"
+  - "NqRaE8mid3A"
+  - "F6_LBEGtINE"
+  - "uPxBttnunoI"
+  - "z4kWfA-c9Mk"
+  - "Gy0omY_BBeQ"
 ---
-{{< youtube uePq_efTU3s >}}
-{{< youtube kjFzJ8qIYWI >}}
-{{< youtube UfKH1HLMdpE >}}
-{{< youtube NqRaE8mid3A >}}
-{{< youtube F6_LBEGtINE >}}
-{{< youtube uPxBttnunoI >}}
-{{< youtube z4kWfA-c9Mk >}}
-{{< youtube Gy0omY_BBeQ >}}
+
+## Music Videos
+
+{{< videogrid >}}
