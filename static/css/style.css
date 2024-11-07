@@ -86,3 +86,15 @@ figure {
 .video-item:hover img {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    #nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
