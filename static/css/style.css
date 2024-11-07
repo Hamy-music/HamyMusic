@@ -16,6 +16,7 @@ main {
     flex-direction: column;
     text-align: center; 
     padding: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 figure {
@@ -74,7 +75,7 @@ figure img {
 
 .video-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -88,6 +89,8 @@ figure img {
 .video-item:hover img {
     transform: scale(1.05);
 }
+
+
 
 @media (max-width: 768px) {
     #nav {
