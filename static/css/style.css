@@ -14,30 +14,32 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-left: 80px; 
+    text-align: center; 
     padding: 20px;
 }
 
 figure {
     position: relative;
-    height: 100vw; 
+    height: auto; 
     margin: 0; 
 }
 
-
+figure img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
 
 #nav {
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 10; 
-    width: 50px;
+    width: 40px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #fff;
 }
 
 
@@ -88,13 +90,31 @@ figure {
 }
 
 @media (max-width: 768px) {
-    #nav ul {
+    #nav {
+        position: fixed;  
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;  
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        align-items: center; 
+    
+    }
+
+    #nav ul {
+        writing-mode: horizontal-tb; 
+        flex-direction: row;  
+        gap: 50px;  
+    }
+
+    #nav ul li {
+        transform: rotate(270deg);  
+        font-size: 14px;  
     }
     .video-gallery {
         display: grid;
         grid-template-columns: 1fr;
     }
+
 }
