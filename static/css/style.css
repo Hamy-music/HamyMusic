@@ -78,7 +78,8 @@ figure img {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     margin-top: 20px;
-    justify-items: center;
+
+    align-items: center;
 }
 
 .video-item img {
@@ -97,7 +98,7 @@ figure img {
 
 @media (max-width: 768px) {
     #nav {
-        position: fixed;  
+        position: static;  
         top: 0;
         left: 0;
         width: 100%;
