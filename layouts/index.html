@@ -33,6 +33,13 @@
             {{ end }}
         </section>
 
+        <section id="performances">
+            {{ with .Site.GetPage "/gigs.md" }}
+            <h2>{{ .Title }}</h2>
+            {{ .Content }}
+            {{ end }}
+        </section>
+
         <section id="musicvideos">
             {{ with .Site.GetPage "/musicvideos.md" }}
             <h2>{{ .Title }}</h2>
@@ -46,6 +53,7 @@
             {{ .Content }}
             {{ end }}
         </section>
+
     </main>
 
     <footer>

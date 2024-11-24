@@ -17,5 +17,7 @@
     <loc>http://localhost:1313/musicvideos-copy/</loc>
   </url><url>
     <loc>http://localhost:1313/musicvideos/</loc>
+  </url><url>
+    <loc>http://localhost:1313/gigs/</loc>
   </url>
 </urlset>
