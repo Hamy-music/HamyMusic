@@ -4,7 +4,7 @@ title: "Performances"
 
 
 
-## LIVE LOOP PERFORMANCE
+### LIVE LOOP PERFORMANCE
 
 {{< figure src="/kuvat/2023 HÄMY_ Kuva Riika Lantto 2.jpg"  >}}
 
@@ -15,7 +15,7 @@ Thanks to live-looping technology, the performance comes to life with a richer a
 {{< /readmore >}}
 
 
-## ACOUSTIC PERFORMANCE
+### ACOUSTIC PERFORMANCE
 {{< figure src="/kuvat/2023 Hämy 3 Jussi Määttä.jpg"  >}}
 
 An acoustic performance is an excellent choice for smaller events.

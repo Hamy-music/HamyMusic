@@ -2,7 +2,7 @@
 title: "Contact"
 ---
 
-## Interested and want to get in touch?
+### Contact 
 
 > Feel free to send us an email at hamy.music@outlook.com
 
