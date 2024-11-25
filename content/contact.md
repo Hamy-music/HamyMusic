@@ -2,12 +2,11 @@
 title: "Contact"
 ---
 
-> [hamy.music@outlook.com](mailto:hamy.music@outlook.com)
+## Interested and want to get in touch?
 
-> Facebook: [HÄMY - @hamymusiikki](https://www.facebook.com/hamymusiikki)
+> Feel free to send us an email at hamy.music@outlook.com
 
-> YouTube: [HÄMY - @hamy_music_finland](http://www.youtube.com/@hamy_music_finland)
-
-> Instagram: [HÄMY - @hamy_music_finland](https://www.instagram.com/hamy_music_finland)
-
-> Levykauppa Äx - [HÄMY - levyt](https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON)
+ <!--[hamy.music@outlook.com](mailto:hamy.music@outlook.com)
+ 
+ {{< contact >}}
+ --->

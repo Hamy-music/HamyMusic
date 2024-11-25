@@ -23,19 +23,16 @@
     <main>
         <h1>HÄMY</h1>
         <section id="intro">
-            {{ .Content }}
         </section>
 
         <section id="about">
             {{ with .Site.GetPage "about" }}
-            <h2>{{ .Title }}</h2>
             {{ .Content }}
             {{ end }}
         </section>
 
         <section id="performances">
             {{ with .Site.GetPage "/gigs.md" }}
-            <h2>{{ .Title }}</h2>
             {{ .Content }}
             {{ end }}
         </section>
@@ -47,9 +44,13 @@
             {{ end }}
         </section>
 
+        <section id="social">
+            {{ with .Site.GetPage "social" }}
+            {{ .Content }}
+            {{ end }}
+
         <section id="contact">
             {{ with .Site.GetPage "contact" }}
-            <h2>{{ .Title }}</h2>
             {{ .Content }}
             {{ end }}
         </section>

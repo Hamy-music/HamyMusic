@@ -115,6 +115,23 @@ image {
     text-decoration: none; 
   }
 
+  .social-icons img {
+    width: 40px;  
+    height: 40px; 
+    object-fit: contain; 
+  }
+  
+.social-icon.instagram img,
+.social-icon.facebook img,
+.social-icon.youtube img {
+  filter: invert(1);  /* Päinvastainen väri */
+}
+.social-icon.levykauppa img {
+  filter: none;  
+}
+
+
+
 @media (max-width: 768px) {
     #nav {
         position: static;  
