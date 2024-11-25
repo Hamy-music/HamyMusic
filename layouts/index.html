@@ -23,6 +23,9 @@
     <main>
         <h1>HÄMY</h1>
         <section id="intro">
+            {{ with .Site.GetPage "intro" }}
+            {{ .Content }}
+            {{ end }}
         </section>
 
         <section id="about">

@@ -1,8 +1,6 @@
 ---
 title: "Music Videos"
 videos:
-  - "uePq_efTU3s"
-  - "2GuubC_SxXE"
   - "kjFzJ8qIYWI"
   - "UfKH1HLMdpE"
   - "NqRaE8mid3A"

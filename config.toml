@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 languageCode = "fi"
-title = "HÄMY Music"
+title = "HÄMY"
 [taxonomies]
 category = ""
 tag = ""

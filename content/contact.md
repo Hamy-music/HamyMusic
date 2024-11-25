@@ -2,11 +2,9 @@
 title: "Contact"
 ---
 
-### Contact 
+### Bookings and contact
 
-> Feel free to send us an email at hamy.music@outlook.com
+> Aki Vähäsarja aka. HÄMY 
 
- <!--[hamy.music@outlook.com](mailto:hamy.music@outlook.com)
- 
- {{< contact >}}
- --->
+> hamymusic@outlook.com
+
