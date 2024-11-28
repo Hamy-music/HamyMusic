@@ -1,4 +1,3 @@
-
 body {
     background-color: black;
     color: white;
@@ -14,7 +13,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
     padding: 0px;
     font-family: "Roboto", sans-serif;
 }
@@ -22,8 +21,8 @@ main {
 
 figure {
     position: relative;
-    height: auto; 
-    margin: 0; 
+    height: auto;
+    margin: 0;
 }
 
 figure img {
@@ -32,11 +31,16 @@ figure img {
     border-radius: 0px;
 }
 
+image {
+    width: 100%;
+    height: 100%;
+}
+
 #nav {
     position: absolute;
     top: 20px;
     left: 20px;
-    z-index: 10; 
+    z-index: 10;
     width: 40px;
     height: 100vh;
     display: flex;
@@ -44,10 +48,6 @@ figure img {
     align-items: center;
 }
 
-image {
-    width: 100%;
-    height: 100%;
-}
 
 #nav ul {
     list-style: none;
@@ -60,7 +60,7 @@ image {
 
 #nav ul li {
     writing-mode: vertical-rl;
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
     font-size: 18px;
     font-family: "Roboto", sans-serif;
 }
@@ -88,7 +88,7 @@ image {
 }
 
 .video-item img {
-    width: 400px; 
+    width: 400px;
     height: 240px;
     object-fit: cover;
     border-radius: 2px;
@@ -98,39 +98,40 @@ image {
 .video-item:hover img {
     transform: scale(1.05);
 }
-  
+
 
 .read-more-btn {
-    background: none; 
-    border: none; 
-    color: white; 
-    font-size: 16px; 
-    text-decoration: underline; 
-    cursor: pointer; 
-    padding: 0; 
-    display: inline; 
-  }
-  
-  .read-more-btn:hover {
-    color: #ddd; 
-    text-decoration: none; 
-  }
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    display: inline;
+}
 
-  .social-icons img {
-    width: 30px;  
-    height: 30px; 
-    object-fit: contain; 
-  }
-  
+.read-more-btn:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
 .social-icon.instagram img,
 .social-icon.facebook img,
 .social-icon.youtube img,
-.social-icon.spotify img
-{
-  filter: invert(1);  /* Päinvastainen väri */
+.social-icon.spotify img {
+    filter: invert(1);
+    /* Päinvastainen väri */
 }
+
 .social-icon.levykauppa img {
-  filter: none;  
+    filter: none;
 }
 
 #intro {
@@ -150,32 +151,51 @@ image {
 
 
 @media (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+    #intro {
+        margin: 0;
+    }
+    #about,
+    #performances,
+    #discography,
+    #musicvideos,
+    #media {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     #nav {
-        position: static;  
+        position: static;
         top: 0;
         left: 0;
         width: 100%;
-        height: auto;  
+        height: auto;
         display: flex;
         justify-content: center;
-        align-items: center; 
-    
+        align-items: center;
+
     }
 
     #nav ul {
-        writing-mode: horizontal-tb; 
-        flex-direction: row;  
-        gap: 50px;  
+        writing-mode: horizontal-tb;
+        flex-direction: row;
+        gap: 50px;
     }
 
     #nav ul li {
-        transform: rotate(270deg);  
-        font-size: 14px;  
+        transform: rotate(270deg);
+        font-size: 14px;
     }
+
     .video-gallery {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .video-item img {
         width: 100%;
         height: auto;
