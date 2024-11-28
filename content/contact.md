@@ -2,7 +2,7 @@
 title: "Contact"
 ---
 
-### Bookings and contact
+## BOOKINGS AND CONTACT
 
 > Aki Vähäsarja aka. HÄMY 
 
