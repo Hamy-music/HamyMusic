@@ -11,7 +11,7 @@ title: "Performances"
 A live-loop performance is HÄMY at its best!
 
 {{< readmore id="live-loop-details" >}}
-Thanks to live-looping technology, the performance comes to life with a richer array of soundscapes. Looping allows multiple instruments to be "played" simultaneously, and the audience gets to witness in real time how each song takes shape and reaches its final form. Over the years, live-looping has become a refined skill, mastered by only a few who can simultaneously maintain a connection with their audience while delivering an entertaining live experience. I believe I’ve achieved this balance and can offer listeners a truly unique experience! This performance style is perfect for small, medium, and even very large events.
+Thanks to live-looping technology, the performance comes to life with a richer array of soundscapes. Looping allows multiple instruments to be "played" simultaneously and the audience gets to witness in real time how each song takes shape and reaches its final form. Over the years live-looping has become a refined skill, mastered by only a few who can simultaneously maintain a connection with their audience while delivering an entertaining live experience. I believe I’ve achieved this balance and can offer listeners a truly unique experience! This performance style is perfect for small, medium and even very large events.
 {{< /readmore >}}
 
 
