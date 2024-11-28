@@ -167,30 +167,9 @@ image {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
     #nav {
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        display: none;
     }
-
-    #nav ul {
-        writing-mode: horizontal-tb;
-        flex-direction: row;
-        gap: 50px;
-    }
-
-    #nav ul li {
-        transform: rotate(270deg);
-        font-size: 14px;
-    }
-
     .video-gallery {
         display: grid;
         grid-template-columns: 1fr;
