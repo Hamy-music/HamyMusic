@@ -1,0 +1,12 @@
+
+<div class="album-gallery">
+    {{ range .Page.Params.albums }}
+        <div class="album-item">
+            <img src="{{ .image }}" alt="{{ .title }} kansi">
+            <p><strong>{{ .title }}</strong> ({{ .type }}, {{ .year }})</p>
+        </div>
+    {{ end }}
+</div>
+
+
+ 
