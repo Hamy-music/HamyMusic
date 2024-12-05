@@ -8,6 +8,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -38,11 +39,11 @@ image {
 
 #nav {
     position: absolute;
-    left: 2%; 
-    top: 50%; 
-    transform: translateY(-50%); 
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
-    width: 40px; 
+    width: 40px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -55,13 +56,13 @@ image {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
 }
 
 #nav ul li {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 1rem; 
+    font-size: 1rem;
     font-family: "Roboto", sans-serif;
 }
 
@@ -124,7 +125,6 @@ image {
 .social-icon.youtube img,
 .social-icon.spotify img {
     filter: invert(1);
-    /* Päinvastainen väri */
 }
 
 .social-icon.levykauppa img {
@@ -154,61 +154,82 @@ image {
     gap: 20px;
     justify-content: center;
 }
+
 .album-item {
     text-align: center;
     max-width: 200px;
 }
+
 .album-item img {
     width: 100%;
-  
+
 }
 
 .language-button {
-    background-color: black;   
-    color: white;             
-    padding: 10px 20px;       
-    margin: 5px;              
-    border-radius: 5px;       
-    text-decoration: none;    
-    font-size: 16px;          
-    display: inline-block;    
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .language-button:hover {
-    background-color: #555;   
+    background-color: #555;
 }
+
 
 
 
 @media (max-width: 768px) {
     body {
         font-size: medium;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
+
     #intro {
         margin: 0;
+        text-align: center;
     }
+
     #about,
     #performances,
     #discography,
     #musicvideos,
-    #media {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #media,
+    #contact,
+    #social {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
     }
+
     #nav {
         display: none;
     }
+
     .video-gallery {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
     }
 
-    .video-item img {
-        width: 100%;
-        height: auto;
+    .album-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
     }
 
 }
