@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h1>Taxonomy</h1>
+  <ul>
+    {{ range .Data.Terms }}
+      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+    {{ else }}
+      <li>No terms found</li>
+    {{ end }}
+  </ul>
+{{ end }}

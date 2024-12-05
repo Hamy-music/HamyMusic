@@ -1,9 +1,20 @@
 baseURL = "http://localhost:1313"
 languageCode = "fi"
 title = "HÄMY"
-[taxonomies]
-category = ""
-tag = ""
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[languages]
+[languages.fi]
+  title = "HÄMY"
+  languageCode = "fi"
+  contentDir = "content/fi"
+
+[languages.en]
+  title = "HÄMY"
+  languageCode = "en"
+  contentDir = "content/en"
 
 
