@@ -8,6 +8,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -124,7 +125,6 @@ image {
 .social-icon.youtube img,
 .social-icon.spotify img {
     filter: invert(1);
-    /* Päinvastainen väri */
 }
 
 .social-icon.levykauppa img {
@@ -184,6 +184,7 @@ image {
 @media (max-width: 768px) {
     body {
         font-size: medium;
+        overflow-x: hidden;
     }
     #intro {
         margin: 0;
@@ -192,23 +193,29 @@ image {
     #performances,
     #discography,
     #musicvideos,
-    #media {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #media,
+    #contact,
+    #social {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
+
     #nav {
         display: none;
     }
+    
     .video-gallery {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 10px;
     }
 
     .video-item img {
-        width: 100%;
-        height: auto;
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px;
     }
 
 }
