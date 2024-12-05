@@ -5,7 +5,7 @@ title: "Performances"
 ## KEIKAT
 ### LIVE-LOOPPAUS KEIKKA
 
-{{< figure src="/kuvat/2023 HÄMY_ Kuva Riika Lantto 2.jpg"  >}}
+{{< figure src="/kuvat/Live-loop-logo.jpg"  >}}
 
 Live-looppaus keikka on HÄMYÄ parhaimmillaan!
 
@@ -15,7 +15,7 @@ Live-looppaus teknologian ansiosta keikkaan saa huomattavasti enemmän elämää
 
 
 ### AKUSTINEN KEIKKA
-{{< figure src="/kuvat/2023 Hämy 3 Jussi Määttä.jpg"  >}}
+{{< figure src="/kuvat/Akustinen-keikka-logo.jpg"  >}}
 
 Akustinen keikka sopii erinomaisesti pieniin tilaisuuksiin.
 
