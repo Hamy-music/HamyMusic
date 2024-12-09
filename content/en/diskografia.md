@@ -7,7 +7,7 @@ albums:
     year: "2022"
   - image: "/kuvat/Loiste kansi.jpg"
     title: "Loiste"
-    type: "albumi"
+    type: "album"
     year: "2021"
   - image: "/kuvat/Yötön yö kansi.jpg"
     title: "Yötön yö"
@@ -23,7 +23,7 @@ albums:
     year: "2020"
   - image: "/kuvat/Otavasta pohjoiseen spotify.jpg"
     title: "Otavasta Pohjoiseen"
-    type: "albumi"
+    type: "album"
     year: "2019"
 
 ---
