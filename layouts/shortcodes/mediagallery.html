@@ -1,0 +1,7 @@
+<div class="media-gallery">
+    {{ range .Site.Params.media }}
+        <a href="{{ .url }}" download>
+            <img src="{{ .url }}" alt="{{ .alt }}" />
+        </a>
+    {{ end }}
+</div>
