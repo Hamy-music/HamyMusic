@@ -106,22 +106,50 @@ figure img {
     opacity: 0.8;
 }
 
-
 .video-gallery {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: white black;
+}
+
+.video-item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
 }
 
 .video-item img {
-    text-align: center;
-    max-width: 200px;
+    width: 100%;
+    transition: transform 0.3s ease;
 }
 
 .video-item:hover img {
     transform: scale(1.05);
 }
+
+.video-gallery::-webkit-scrollbar {
+    height: 8px;
+    width: 30px;
+}
+
+.video-gallery::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+.video-gallery::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.video-gallery::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
 
 
 .read-more-btn {
@@ -258,12 +286,8 @@ figure img {
         display: none;
     }
 
-    .video-gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        align-items: center;
-        justify-items: center;
+    .video-item {
+        width: calc((100% / 2) - 20px); 
     }
 
     .album-gallery {
