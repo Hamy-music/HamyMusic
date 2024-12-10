@@ -372,8 +372,24 @@ figure img {
         justify-items: center;
     }
 
+    .media-gallery {
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 5px; 
+        overflow-x: auto;
+    }
+
     .media-item {
-        width: calc((100% / 1) - 20px); 
+        width: calc(50% - 20px); 
+        max-width: 150px; 
+    }
+
+    .media-gallery img {
+        max-height: 150px; 
+    }
+
+    .caption {
+        font-size: 12px; 
     }
 
 
