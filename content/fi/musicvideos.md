@@ -9,5 +9,5 @@ videos:
   - "z4kWfA-c9Mk"
   - "Gy0omY_BBeQ"
 ---
-## Videot
+## VIDEOT
 {{< videogrid >}}
