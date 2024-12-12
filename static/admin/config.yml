@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
   branch: main 
-  identity_url: "identity_url: https://hamymusic.netlify.app/.netlify/identity"
+  identity_url: https://hamymusic.netlify.app/.netlify/identity
+  
 media_folder: static/kuvat
 public_folder: /kuvat
 collections:
