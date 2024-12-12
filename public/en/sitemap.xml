@@ -2,124 +2,124 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:54361/about/</loc>
+    <loc>http://localhost:54498/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/about/"
+                href="http://localhost:54498/fi/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/about/"
+                href="http://localhost:54498/about/"
                 />
   </url><url>
-    <loc>http://localhost:54361/categories/</loc>
+    <loc>http://localhost:54498/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/categories/"
+                href="http://localhost:54498/fi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/categories/"
+                href="http://localhost:54498/categories/"
                 />
   </url><url>
-    <loc>http://localhost:54361/contact/</loc>
+    <loc>http://localhost:54498/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/contact/"
+                href="http://localhost:54498/fi/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/contact/"
+                href="http://localhost:54498/contact/"
                 />
   </url><url>
-    <loc>http://localhost:54361/diskografia/</loc>
+    <loc>http://localhost:54498/diskografia/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/diskografia/"
+                href="http://localhost:54498/fi/diskografia/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/diskografia/"
+                href="http://localhost:54498/diskografia/"
                 />
   </url><url>
-    <loc>http://localhost:54361/</loc>
+    <loc>http://localhost:54498/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/"
+                href="http://localhost:54498/fi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/"
+                href="http://localhost:54498/"
                 />
   </url><url>
-    <loc>http://localhost:54361/media/</loc>
+    <loc>http://localhost:54498/media/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/media/"
+                href="http://localhost:54498/fi/media/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/media/"
+                href="http://localhost:54498/media/"
                 />
   </url><url>
-    <loc>http://localhost:54361/musicvideos/</loc>
+    <loc>http://localhost:54498/musicvideos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/musicvideos/"
+                href="http://localhost:54498/fi/musicvideos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/musicvideos/"
+                href="http://localhost:54498/musicvideos/"
                 />
   </url><url>
-    <loc>http://localhost:54361/gigs/</loc>
+    <loc>http://localhost:54498/gigs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/gigs/"
+                href="http://localhost:54498/fi/gigs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/gigs/"
+                href="http://localhost:54498/gigs/"
                 />
   </url><url>
-    <loc>http://localhost:54361/social/</loc>
+    <loc>http://localhost:54498/social/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/social/"
+                href="http://localhost:54498/fi/social/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/social/"
+                href="http://localhost:54498/social/"
                 />
   </url><url>
-    <loc>http://localhost:54361/tags/</loc>
+    <loc>http://localhost:54498/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:54361/fi/tags/"
+                href="http://localhost:54498/fi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:54361/tags/"
+                href="http://localhost:54498/tags/"
                 />
   </url>
 </urlset>
