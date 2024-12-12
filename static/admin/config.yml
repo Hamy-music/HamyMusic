@@ -1,12 +1,27 @@
 backend:
   name: git-gateway
   branch: main 
+  identity_url: "https://app.netlify.com/identity"
 media_folder: static/kuvat
 public_folder: /kuvat
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+collections:
+  - name: 'fi-content'
+    label: 'Content (FI)'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'en-content'
+    label: 'Content (EN)'
+    folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
