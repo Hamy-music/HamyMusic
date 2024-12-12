@@ -5,7 +5,6 @@ backend:
 media_folder: static/kuvat
 public_folder: /kuvat
 collections:
-collections:
   - name: 'fi-content'
     label: 'Content (FI)'
     folder: 'content/fi'
