@@ -1,5 +1,9 @@
 body {
     background-color: black;
+    background-image: url('/images/havu_ruskea.svg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: large;
@@ -31,6 +35,24 @@ h3 {
     font-size: 18;
 }
 
+#about,
+#performances,
+#discography,
+#musicvideos,
+#media,
+#contact,
+#social,
+#media {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+
 figure {
     position: relative;
     height: auto;
@@ -42,6 +64,11 @@ figure img {
     object-fit: contain;
     border-radius: 0px;
 }
+
+.gigs-image img {
+    max-width: 650px;
+}
+
 
 #nav {
     position: absolute;
@@ -192,26 +219,14 @@ figure img {
     margin: 0;
 }
 
-#about,
-#performances,
-#discography,
-#musicvideos,
-#media,
-#contact,
-#social,
-#media {
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 .responsive-video-container {
     position: relative;
-    width: 80%; 
-    max-width: 640px; 
-    margin: 0 auto; 
-    padding-bottom: 45%; 
+    width: 100%;
+    max-width: 650px;
+    max-height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 45%;
     height: 0;
     overflow: hidden;
 }
@@ -242,6 +257,7 @@ figure img {
     width: 100%;
 
 }
+
 .media-gallery {
     display: flex;
     gap: 20px;
@@ -273,6 +289,7 @@ figure img {
     width: 200px;
     position: relative;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .media-gallery img {
@@ -311,7 +328,7 @@ figure img {
 
 
 .language-button img {
-    width: 30px; 
+    width: 30px;
     height: auto;
     display: block;
     border-radius: 5px;
@@ -319,13 +336,76 @@ figure img {
 }
 
 .language-button:hover img {
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 #nav ul li.language-button {
     transform: none;
-    writing-mode: initial; 
+    writing-mode: initial;
 }
+
+@media (max-width: 1024px) {
+    body {
+        font-size: medium;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #intro {
+        margin: 0;
+        text-align: center;
+    }
+    #nav {
+        display: none;
+    }
+    #about,
+    #performances,
+    #discography,
+    #musicvideos,
+    #media,
+    #contact,
+    #social {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .video-item {
+        width: calc((100% / 2) - 20px);
+    }
+
+    .album-gallery {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .media-gallery {
+        justify-content: center;
+        gap: 15px;
+        padding: 5px;
+        overflow-x: auto;
+    }
+
+    .media-item {
+        width: calc(50% - 20px);
+        max-width: 150px;
+    }
+
+    .media-gallery img {
+        max-height: 150px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -354,6 +434,7 @@ figure img {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
+        background-color: black;
     }
 
     #nav {
@@ -361,7 +442,7 @@ figure img {
     }
 
     .video-item {
-        width: calc((100% / 1) - 20px); 
+        width: calc((100% / 1) - 20px);
     }
 
     .album-gallery {
@@ -375,22 +456,22 @@ figure img {
     .media-gallery {
         justify-content: flex-start;
         gap: 10px;
-        padding: 5px; 
+        padding: 5px;
         overflow-x: auto;
     }
 
-    
+
     .media-item {
-        width: calc(50% - 20px); 
-        max-width: 150px; 
+        width: calc(50% - 20px);
+        max-width: 150px;
     }
 
     .media-gallery img {
-        max-height: 150px; 
+        max-height: 150px;
     }
 
     .caption {
-        font-size: 12px; 
+        font-size: 12px;
     }
 
 

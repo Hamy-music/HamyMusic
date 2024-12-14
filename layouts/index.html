@@ -8,12 +8,14 @@
     <title>{{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
     <header>
+    
         <div id="nav">
             <ul id="nav-list">
                 <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A" target="_blank"><span>Spotify</span></a></li>
@@ -45,6 +47,12 @@
     
         <section id="about">
             {{ with .Site.GetPage "content" "about" }}
+            {{ .Content }}
+            {{ end }}
+        </section>
+
+        <section id="introvideo">
+            {{ with .Site.GetPage "content" "introvideo" }}
             {{ .Content }}
             {{ end }}
         </section>
