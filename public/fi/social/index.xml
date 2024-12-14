@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Socials on HÄMY</title>
+    <link>http://localhost:1313/fi/social/</link>
+    <description>Recent content in Socials on HÄMY</description>
+    <generator>Hugo</generator>
+    <language>fi</language>
+    <atom:link href="http://localhost:1313/fi/social/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social</title>
+      <link>http://localhost:1313/fi/social/social/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fi/social/social/</guid>
+      <description>&lt;div class=&#34;social-icons&#34;&gt;&#xD;&#xA;    &lt;a href=&#34;https://www.instagram.com/hamy_music_finland&#34; target=&#34;_blank&#34; class=&#34;social-icon instagram&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/kuvat/icons8-instagram.svg&#34; alt=&#34;Instagram&#34; /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;a href=&#34;https://www.facebook.com/hamymusiikki&#34; target=&#34;_blank&#34; class=&#34;social-icon facebook&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/kuvat/icons8-facebook.svg&#34; alt=&#34;Facebook&#34; /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;a href=&#34;http://www.youtube.com/@hamy_music_finland&#34; target=&#34;_blank&#34; class=&#34;social-icon youtube&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/kuvat/icons8-youtube.svg&#34; alt=&#34;YouTube&#34; /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;a href=&#34;https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A&#34; target=&#34;_blank&#34; class=&#34;social-icon spotify&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/kuvat/spotify.png&#34; alt=&#34;Spotify&#34; /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;a href=&#34;https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON&#34; target=&#34;_blank&#34; class=&#34;social-icon levykauppa&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/kuvat/levykauppa__ax.gif&#34; alt=&#34;Levykauppa Äx&#34; /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;  &lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

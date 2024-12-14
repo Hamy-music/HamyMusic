@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contacts on HÄMY</title>
+    <link>http://localhost:1313/fi/contact/</link>
+    <description>Recent content in Contacts on HÄMY</description>
+    <generator>Hugo</generator>
+    <language>fi</language>
+    <atom:link href="http://localhost:1313/fi/contact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/fi/contact/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fi/contact/contact/</guid>
+      <description>&lt;h2 id=&#34;yhteydenotot&#34;&gt;YHTEYDENOTOT&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Aki Vähäsarja aka. HÄMY&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:hamymusic@outlook.com&#34;&gt;hamymusic@outlook.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

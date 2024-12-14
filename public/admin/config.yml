@@ -6,28 +6,159 @@ backend:
 media_folder: static/kuvat
 public_folder: /kuvat
 collections:
-  - name: 'fi-content'
-    label: 'Content (FI)'
+
+  - name: 'fi-about'
+    label: 'about (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'en-content'
-    label: 'Content (EN)'
+  - name: 'en-about'
+    label: 'about (EN)'
     folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'fi-gigs'
+    label: 'Performances (FI)'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
+      - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
+
+  - name: 'en-gigs'
+    label: 'Performances (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
+      - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
+
+  - name: 'fi-diskografia'
+    label: 'Discography'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
+      - { label: 'Nimi', name: 'album_title', widget: 'string' }
+      - { label: 'Vuosi', name: 'album_year', widget: 'string' }
+      - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['albumi', 'single'] }
+
+  - name: 'en-diskografia'
+    label: 'Discography'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
+      - { label: 'Nimi', name: 'album_title', widget: 'string' }
+      - { label: 'Vuosi', name: 'album_year', widget: 'string' }
+      - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['album', 'single'] }
+
+  - name: 'fi-musicvideos'
+    label: 'Music Videos'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Video ID', name: 'video_id', widget: 'string' }
+
+  - name: 'en-musicvideos'
+    label: 'Music Videos'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Video ID', name: 'video_id', widget: 'string' }
+
+  - name: 'fi-media'
+    label: 'Media'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Media Image', name: 'media_image', widget: 'image' }
+      - { label: 'Caption', name: 'caption', widget: 'string' }
+
+  - name: 'en-media'
+    label: 'Media'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Media Image', name: 'media_image', widget: 'image' }
+      - { label: 'Caption', name: 'caption', widget: 'string' }
+
+  - name: 'fi-contact'
+    label: 'Contact'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
+
+  - name: 'en-contact'
+    label: 'Contact'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }     
+
+  - name: 'fi-social'
+    label: 'Social'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Social Media Link', name: 'social_link', widget: 'string' }
+      - { label: 'Social Media Icon', name: 'social_icon', widget: 'image' }
+
+  - name: 'en-social'
+    label: 'Social'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Social Media Link', name: 'social_link', widget: 'string' }
+      - { label: 'Social Media Icon', name: 'social_icon', widget: 'image' }

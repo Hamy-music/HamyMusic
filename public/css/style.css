@@ -346,7 +346,7 @@ figure img {
 
 @media (max-width: 1024px) {
     body {
-        font-size: medium;
+        font-size: large;
         margin: 0;
         padding: 0;
         width: 100%;
