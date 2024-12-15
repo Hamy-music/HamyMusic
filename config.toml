@@ -1,4 +1,5 @@
 baseURL = "http://localhost:1313"
+defaultContentLanguage = "fi"
 
 title = "HÄMY"
 
@@ -11,11 +12,13 @@ title = "HÄMY"
   title = "HÄMY"
   languageCode = "fi"
   contentDir = "content/fi"
+  weight = 1
 
 [languages.en]
   title = "HÄMY"
   languageCode = "en"
   contentDir = "content/en"
+  weight = 2
 
 
 [params]

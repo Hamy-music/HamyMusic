@@ -1,8 +1,9 @@
+
 body {
     background-color: black;
-    background-image: url('/images/havu_ruskea.svg');
+    background-image: url('/kuvat/havu_ruskea.svg');
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: 100px;
     background-position: center;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -40,17 +41,17 @@ h3 {
 #discography,
 #musicvideos,
 #media,
-#contact,
-#social,
 #media {
-    margin-left: 120px;
-    margin-right: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+
 }
+
 
 
 figure {
@@ -221,12 +222,10 @@ figure img {
 
 .responsive-video-container {
     position: relative;
-    width: 100%;
-    max-width: 650px;
-    max-height: 400px;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 20px;
-    padding-bottom: 45%;
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
@@ -344,6 +343,11 @@ figure img {
     writing-mode: initial;
 }
 
+#contact {
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width: 1024px) {
     body {
         font-size: large;
@@ -359,6 +363,7 @@ figure img {
     #nav {
         display: none;
     }
+
     #about,
     #performances,
     #discography,
@@ -366,12 +371,10 @@ figure img {
     #media,
     #contact,
     #social {
-        margin-left: 20px;
-        margin-right: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
-        background-color: transparent;
+        background-color: black;
     }
 
     .video-item {
@@ -404,6 +407,8 @@ figure img {
     .caption {
         font-size: 14px;
     }
+
+
 }
 
 
@@ -429,8 +434,6 @@ figure img {
     #media,
     #contact,
     #social {
-        margin-left: 10px;
-        margin-right: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
