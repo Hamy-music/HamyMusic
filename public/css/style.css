@@ -222,10 +222,10 @@ figure img {
 
 .responsive-video-container {
     position: relative;
-    max-width: 450px;
+    max-width: 650px; 
     margin: 0 auto;
     margin-top: 20px;
-    padding-bottom: 56.25%;
+    padding-bottom: 35%;
     height: 0;
     overflow: hidden;
 }
@@ -368,13 +368,19 @@ figure img {
     #performances,
     #discography,
     #musicvideos,
-    #media,
+    #media {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: black;
+    }
+
     #contact,
     #social {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
-        background-color: black;
+        
     }
 
     .video-item {
@@ -431,13 +437,19 @@ figure img {
     #performances,
     #discography,
     #musicvideos,
-    #media,
+    #media {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: black;
+    }
+
+
     #contact,
     #social {
         margin-top: 10px;
         margin-bottom: 10px;
         text-align: center;
-        background-color: black;
     }
 
     #nav {
