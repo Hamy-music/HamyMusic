@@ -3,7 +3,7 @@ body {
     background-color: black;
     background-image: url('/kuvat/havu_ruskea.svg');
     background-repeat: repeat-y;
-    background-size: 100px;
+    background-size: 50px;
     background-position: center;
     color: white;
     font-family: 'Roboto', sans-serif;
