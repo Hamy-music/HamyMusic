@@ -21,15 +21,15 @@ main {
 }
 
 h1 {
-    font-size: 24;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 20;
+    font-size: 20px;
 }
 
 h3 {
-    font-size: 18;
+    font-size: 18px;
 }
 
 /*sections yleiset*/
@@ -271,7 +271,7 @@ figure img {
     border: 0;
 }
 
-
+/*havukuvion väri rgb(80, 45, 22) */
 /*diskografia*/
 
 .album-gallery {
@@ -393,6 +393,7 @@ figure img {
     #contact,
     #social,
     footer{
+        padding: 5px;
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
         background-size: 59px;
@@ -466,7 +467,7 @@ figure img {
     #contact,
     #social,
     footer {
-
+        padding: 5px;
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
         background-size: 54px;
