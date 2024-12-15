@@ -140,7 +140,7 @@ figure img {
     overflow-x: auto;
     padding: 10px;
     scrollbar-width: thin;
-    scrollbar-color: rgb(34, 14, 14) black;
+    scrollbar-color: rgb(80, 45, 22) black;
 }
 
 .video-item {
@@ -169,7 +169,7 @@ figure img {
 }
 
 .video-gallery::-webkit-scrollbar-thumb {
-    background: rgb(34, 14, 14);
+    background: rgb(80, 45, 22);
 }
 
 .video-gallery::-webkit-scrollbar-thumb:hover {
@@ -263,7 +263,7 @@ figure img {
     overflow-x: auto;
     padding: 10px;
     scrollbar-width: thin;
-    scrollbar-color: rgb(34, 14, 14) black;
+    scrollbar-color: rgb(80, 45, 22) black;
     justify-content: center;
 }
 
@@ -276,7 +276,7 @@ figure img {
 }
 
 .media-gallery::-webkit-scrollbar-thumb {
-    background: rgb(34, 14, 14);
+    background: rgb(80, 45, 22);
 }
 
 .media-gallery::-webkit-scrollbar-thumb:hover {
@@ -343,7 +343,7 @@ figure img {
     writing-mode: initial;
 }
 
-#contact {
+#contact a {
     text-decoration: none;
     color: white;
 }
