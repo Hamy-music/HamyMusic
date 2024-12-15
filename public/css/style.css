@@ -53,7 +53,8 @@ h3 {
 }
 
 #contact,
-#social {
+#social,
+footer {
     background-image: url('/kuvat/havu_ruskea.svg');
     background-repeat: repeat-y;
     background-size: 50px;
@@ -391,12 +392,13 @@ figure img {
 
     #contact,
     #social,
-    footer {
+    footer{
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
         background-size: 50px;
         background-position: center;
     }
+
 
     .video-item {
         width: calc((100% / 2) - 20px);
@@ -462,7 +464,8 @@ figure img {
 
 
     #contact,
-    #social {
+    #social,
+    footer {
 
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
