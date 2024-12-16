@@ -1,0 +1,19 @@
+<div class="carousel" duration="7000">
+    <ul tabindex="0">
+      {{ range .Page.Params.videos }}
+        <li>
+          <a href="https://www.youtube.com/watch?v={{ . }}" target="_blank">
+            <img src="https://img.youtube.com/vi/{{ . }}/0.jpg" alt="YouTube Video Thumbnail">
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    <ol>
+      {{ range $index, $video := .Page.Params.videos }}
+        <li><a href="#c1_slide{{ add $index 1 }}"></a></li>
+      {{ end }}
+    </ol>
+    <div class="prev">&lsaquo;</div>
+    <div class="next">&rsaquo;</div>
+  </div>
+  

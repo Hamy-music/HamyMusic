@@ -10,4 +10,4 @@ videos:
   - "Gy0omY_BBeQ"
 ---
 ## VIDEOT
-{{< videogrid >}}
+{{< videocarousel >}}

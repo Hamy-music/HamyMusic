@@ -1,4 +1,3 @@
-
 body {
     background-color: black;
     color: white;
@@ -53,7 +52,7 @@ h3 {
 }
 
 #contact,
-#social{
+#social {
     background-image: url('/kuvat/havu_ruskea.svg');
     background-repeat: repeat-y;
     background-size: 72px;
@@ -162,13 +161,13 @@ figure img {
 
 
 
-/*musiikkivideogalleria*/
+/*musiikkivideogalleria
 
 .video-gallery {
     display: flex;
     gap: 20px;
     overflow-x: auto;
-    padding: 10px;
+    padding-top: 0;
     scrollbar-width: thin;
     scrollbar-color: rgb(46, 26, 14) black;
 }
@@ -191,7 +190,6 @@ figure img {
 
 .video-gallery::-webkit-scrollbar {
     height: 8px;
-    width: 30px;
 }
 
 .video-gallery::-webkit-scrollbar-track {
@@ -206,6 +204,93 @@ figure img {
     background: rgba(255, 255, 255, 0.7);
 }
 
+
+*/
+/* Carousel CSS */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel ul {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel ul::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel ul li {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #000;
+}
+
+.carousel ul li img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel ol {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel ol li {
+    list-style: none;
+}
+
+.carousel ol li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.carousel ol li.selected a {
+    background-color: #fff;
+}
+
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
 
 /*luelisää button*/
 
@@ -253,7 +338,7 @@ figure img {
 
 .responsive-video-container {
     position: relative;
-    max-width: 650px; 
+    max-width: 650px;
     margin: 0 auto;
     margin-top: 20px;
     padding-bottom: 35%;
@@ -312,7 +397,7 @@ figure img {
 }
 
 .media-gallery::-webkit-scrollbar-thumb {
-    background:rgb(46, 26, 14);
+    background: rgb(46, 26, 14);
 }
 
 .media-gallery::-webkit-scrollbar-thumb:hover {
@@ -373,6 +458,7 @@ figure img {
         margin: 0;
         text-align: center;
     }
+
     #nav {
         display: none;
     }
@@ -390,7 +476,7 @@ figure img {
     }
 
     #contact,
-    #social{
+    #social {
         padding: 5px;
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
@@ -399,10 +485,10 @@ figure img {
     }
 
 
-    .video-item {
-        width: calc((100% / 2) - 20px);
+    .carousel ul li iframe, 
+    .carousel ul li video {
+        max-height: 300px;
     }
-
     .album-gallery {
         display: flex;
         gap: 15px;
@@ -475,8 +561,9 @@ figure img {
         display: none;
     }
 
-    .video-item {
-        width: calc((100% / 1) - 20px);
+    .carousel ul li iframe, 
+    .carousel ul li video {
+        max-height: 200px;
     }
 
     .album-gallery {
