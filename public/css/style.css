@@ -53,11 +53,10 @@ h3 {
 }
 
 #contact,
-#social,
-footer {
+#social{
     background-image: url('/kuvat/havu_ruskea.svg');
     background-repeat: repeat-y;
-    background-size: 59px;
+    background-size: 72px;
     background-position: center;
 }
 
@@ -171,7 +170,7 @@ figure img {
     overflow-x: auto;
     padding: 10px;
     scrollbar-width: thin;
-    scrollbar-color: rgb(80, 45, 22) black;
+    scrollbar-color: rgb(46, 26, 14) black;
 }
 
 .video-item {
@@ -200,7 +199,7 @@ figure img {
 }
 
 .video-gallery::-webkit-scrollbar-thumb {
-    background: rgb(80, 45, 22);
+    background: rgb(46, 26, 14);
 }
 
 .video-gallery::-webkit-scrollbar-thumb:hover {
@@ -300,7 +299,7 @@ figure img {
     overflow-x: auto;
     padding: 10px;
     scrollbar-width: thin;
-    scrollbar-color: rgb(80, 45, 22) black;
+    scrollbar-color: rgb(46, 26, 14) black;
     justify-content: center;
 }
 
@@ -313,7 +312,7 @@ figure img {
 }
 
 .media-gallery::-webkit-scrollbar-thumb {
-    background: rgb(80, 45, 22);
+    background:rgb(46, 26, 14);
 }
 
 .media-gallery::-webkit-scrollbar-thumb:hover {
@@ -391,12 +390,11 @@ figure img {
     }
 
     #contact,
-    #social,
-    footer{
+    #social{
         padding: 5px;
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
-        background-size: 59px;
+        background-size: 60px;
         background-position: center;
     }
 
@@ -465,12 +463,11 @@ figure img {
 
 
     #contact,
-    #social,
-    footer {
+    #social {
         padding: 5px;
         background-image: url('/kuvat/havu_ruskea.svg');
         background-repeat: repeat-y;
-        background-size: 54px;
+        background-size: 57px;
         background-position: center;
     }
 
