@@ -518,6 +518,15 @@ figure img {
     .carousel ul li video {
         max-height: 200px;
     }
+    .carousel .prev,
+    .carousel .next {
+        display: none;
+    }
+    
+    .carousel ol li a {
+        width: 6px;
+        height: 6px;
+    }
 
     .album-gallery {
         display: grid;
