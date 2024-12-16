@@ -14,6 +14,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
@@ -26,6 +27,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
       - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
@@ -37,6 +39,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
       - { label: 'Nimi', name: 'album_title', widget: 'string' }
@@ -50,6 +53,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
 
@@ -60,6 +64,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Media Image', name: 'media_image', widget: 'image' }
       - { label: 'Caption', name: 'caption', widget: 'string' }
@@ -71,6 +76,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
 
@@ -82,6 +88,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
@@ -94,6 +101,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
       - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
@@ -106,6 +114,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
       - { label: 'Nimi', name: 'album_title', widget: 'string' }
@@ -120,6 +129,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
 
@@ -131,6 +141,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Media Image', name: 'media_image', widget: 'image' }
       - { label: 'Caption', name: 'caption', widget: 'string' }
@@ -142,5 +153,6 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }     
