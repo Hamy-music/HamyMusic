@@ -47,7 +47,7 @@ h3 {
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     background-color: black;
 }
 
@@ -211,6 +211,8 @@ figure img {
 .carousel {
     position: relative;
     overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .carousel ul {
@@ -238,16 +240,17 @@ figure img {
     background-color: #000;
 }
 
+.carousel ul li iframe, 
 .carousel ul li img {
     width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 300px;
     object-fit: cover;
 }
 
 .carousel ol {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -576,7 +579,7 @@ figure img {
     }
 
     .media-gallery {
-        justify-content: flex-start;
+        justify-content: center;
         gap: 10px;
         padding: 5px;
         overflow-x: auto;
@@ -585,15 +588,15 @@ figure img {
 
     .media-item {
         width: calc(50% - 20px);
-        max-width: 150px;
+        max-width: 80px;
     }
 
     .media-gallery img {
-        max-height: 150px;
+        max-height: 90px;
     }
 
     .caption {
-        font-size: 12px;
+        font-size: 8px;
     }
 
 
