@@ -305,7 +305,7 @@ figure img {
     max-width: 650px;
     margin: 0 auto;
     margin-top: 20px;
-    padding-bottom: 35%;
+    padding-bottom: 36%;
     height: 0;
     overflow: hidden;
 }
@@ -420,6 +420,11 @@ figure img {
         padding: 5px;
     }
 
+
+    .responsive-video-container {
+        height: 180px;
+    }
+
     #contact,
     #social {
         padding: 5px;
@@ -492,6 +497,9 @@ figure img {
         padding: 5px;
     }
 
+    .responsive-video-container {
+        height: 150px;
+    }
 
     #contact,
     #social {
