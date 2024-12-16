@@ -522,9 +522,8 @@ figure img {
     .media-gallery {
         display: grid; 
         justify-items: center; 
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+        grid-template-columns: repeat(2, 1fr); 
         gap: 5px;
-        flex-wrap: wrap;
         align-items: center;
         width: 100%;
     }
@@ -532,19 +531,21 @@ figure img {
 
     .media-item {
         width: 100%;
-        max-width: 120px;
+        max-width: 110px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .media-gallery img {
-        height: 120px;
-        width: 120px;
+        height: 110px;
+        width: 110px;
+        object-fit: cover;
     }
 
     .caption {
         font-size: 12px;
+        margin-bottom: 0;
     }
 
 
