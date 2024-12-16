@@ -200,7 +200,7 @@ figure img {
     background-color: #000;
 }
 
-.carousel ul li iframe, 
+.carousel ul li iframe,
 .carousel ul li img {
     width: 100%;
     height: auto;
@@ -354,7 +354,6 @@ figure img {
     width: 200px;
     position: relative;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .media-gallery img {
@@ -377,7 +376,7 @@ figure img {
     color: white;
     font-size: 14px;
     font-style: italic;
-    padding: 5px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -433,10 +432,11 @@ figure img {
     }
 
 
-    .carousel ul li iframe, 
+    .carousel ul li iframe,
     .carousel ul li video {
         max-height: 300px;
     }
+
     .album-gallery {
         display: flex;
         gap: 15px;
@@ -445,23 +445,27 @@ figure img {
     }
 
     .media-gallery {
-        justify-content: center;
-        gap: 15px;
+        display: flex;
+        gap: 0px;
         padding: 5px;
-        overflow-x: auto;
+        justify-content: center;
     }
 
     .media-item {
-        width: calc(50% - 20px);
-        max-width: 150px;
+        flex: 0 0 auto;
+        width: 140px;
+        position: relative;
+        text-align: center;
     }
 
     .media-gallery img {
-        max-height: 150px;
+        max-height: 130px;
+        max-width: 130px;
     }
 
     .caption {
         font-size: 14px;
+        margin-bottom: 6px;
     }
 
 
@@ -495,7 +499,6 @@ figure img {
         padding: 5px;
     }
 
-
     #contact,
     #social {
         padding: 5px;
@@ -509,15 +512,16 @@ figure img {
         display: none;
     }
 
-    .carousel ul li iframe, 
+    .carousel ul li iframe,
     .carousel ul li video {
         max-height: 200px;
     }
+
     .carousel .prev,
     .carousel .next {
         display: none;
     }
-    
+
     .carousel ol li a {
         width: 6px;
         height: 6px;
@@ -532,32 +536,30 @@ figure img {
     }
 
     .media-gallery {
-        display: grid; 
-        justify-items: center; 
-        grid-template-columns: repeat(2, 1fr); 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
         gap: 5px;
-        align-items: center;
-        width: 100%;
+        justify-content: center;
     }
 
-
     .media-item {
-        width: 100%;
-        max-width: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        flex: 0 0 auto;
+        width: 130px;
+        position: relative;
+        text-align: center;
     }
 
     .media-gallery img {
         height: 120px;
         width: 120px;
-        object-fit: cover;
+        gap: 2px;
+
     }
 
     .caption {
         font-size: 12px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 
 
