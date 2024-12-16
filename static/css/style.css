@@ -41,6 +41,7 @@ h3 {
     margin: 0;
 }
 
+
 #about,
 #performances,
 #discography,
@@ -53,7 +54,14 @@ h3 {
     padding-top: 10px;
     padding-bottom: 0px;
     background-color: black;
+    justify-content: center;
+    align-items: center;
+    max-width: 680px; 
+    margin-left: auto; 
+    margin-right: auto;
 }
+
+
 
 #contact,
 #social {
@@ -305,8 +313,7 @@ figure img {
     max-width: 650px;
     margin: 0 auto;
     margin-top: 20px;
-    padding-bottom: 36%;
-    height: 0;
+    padding-bottom: 56%;
     overflow: hidden;
 }
 
