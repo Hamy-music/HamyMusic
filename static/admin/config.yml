@@ -54,7 +54,7 @@ collections:
       - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
 
   - name: 'fi-diskografia'
-    label: 'Discography'
+    label: 'Discography (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -67,7 +67,7 @@ collections:
       - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['albumi', 'single'] }
 
   - name: 'en-diskografia'
-    label: 'Discography'
+    label: 'Discography (EN)'
     folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -80,7 +80,7 @@ collections:
       - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['album', 'single'] }
 
   - name: 'fi-musicvideos'
-    label: 'Music Videos'
+    label: 'Music Videos (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -90,7 +90,7 @@ collections:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
 
   - name: 'en-musicvideos'
-    label: 'Music Videos'
+    label: 'Music Videos (EN)'
     folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -100,7 +100,7 @@ collections:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
 
   - name: 'fi-media'
-    label: 'Media'
+    label: 'Media (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -111,7 +111,7 @@ collections:
       - { label: 'Caption', name: 'caption', widget: 'string' }
 
   - name: 'en-media'
-    label: 'Media'
+    label: 'Media (EN)'
     folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -122,7 +122,7 @@ collections:
       - { label: 'Caption', name: 'caption', widget: 'string' }
 
   - name: 'fi-contact'
-    label: 'Contact'
+    label: 'Contact (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -132,7 +132,7 @@ collections:
       - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
 
   - name: 'en-contact'
-    label: 'Contact'
+    label: 'Contact (EN)'
     folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -142,7 +142,7 @@ collections:
       - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }     
 
   - name: 'fi-social'
-    label: 'Social'
+    label: 'Social (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -153,7 +153,7 @@ collections:
       - { label: 'Social Media Icon', name: 'social_icon', widget: 'image' }
 
   - name: 'en-social'
-    label: 'Social'
+    label: 'Social (EN)'
     folder: 'content/en'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
