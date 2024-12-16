@@ -1,3 +1,7 @@
+*::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: black;
     color: white;
@@ -162,51 +166,7 @@ figure img {
 
 
 
-/*musiikkivideogalleria
-
-.video-gallery {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding-top: 0;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(46, 26, 14) black;
-}
-
-.video-item {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 360px;
-    text-align: center;
-}
-
-.video-item img {
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.video-item:hover img {
-    transform: scale(1.05);
-}
-
-.video-gallery::-webkit-scrollbar {
-    height: 8px;
-}
-
-.video-gallery::-webkit-scrollbar-track {
-    background: black;
-}
-
-.video-gallery::-webkit-scrollbar-thumb {
-    background: rgb(46, 26, 14);
-}
-
-.video-gallery::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.7);
-}
-
-
-*/
+/*musiikkivideogalleria*/
 /* Carousel CSS */
 .carousel {
     position: relative;
@@ -385,27 +345,8 @@ figure img {
 .media-gallery {
     display: flex;
     gap: 20px;
-    overflow-x: auto;
     padding: 10px;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(46, 26, 14) black;
     justify-content: center;
-}
-
-.media-gallery::-webkit-scrollbar {
-    height: 8px;
-}
-
-.media-gallery::-webkit-scrollbar-track {
-    background: black;
-}
-
-.media-gallery::-webkit-scrollbar-thumb {
-    background: rgb(46, 26, 14);
-}
-
-.media-gallery::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.7);
 }
 
 .media-item {
@@ -579,24 +520,31 @@ figure img {
     }
 
     .media-gallery {
-        justify-content: center;
-        gap: 10px;
-        padding: 5px;
-        overflow-x: auto;
+        display: grid; 
+        justify-items: center; 
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+        gap: 5px;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
     }
 
 
     .media-item {
-        width: calc(50% - 20px);
-        max-width: 80px;
+        width: 100%;
+        max-width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .media-gallery img {
-        max-height: 90px;
+        height: 120px;
+        width: 120px;
     }
 
     .caption {
-        font-size: 8px;
+        font-size: 12px;
     }
 
 
