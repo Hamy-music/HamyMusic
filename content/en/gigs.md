@@ -16,10 +16,8 @@ Thanks to live-looping technology, the performance comes to life with a richer a
 <br>
 Over the years live-looping has become a refined skill, mastered by only a few who can simultaneously maintain a connection with their audience while delivering an entertaining live experience. I believe I’ve achieved this balance and can offer listeners a truly unique experience! This performance style is perfect for small, medium and even very large events.
 {{< /readmore >}}
-<br>
-<br>
-<br>
-<br>
+
+{{< spacer lines="2" >}}
 
 
 ### ACOUSTIC PERFORMANCE
