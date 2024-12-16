@@ -30,3 +30,5 @@ Akustinen keikka on pienille tapahtumille oivallinen keikkamuoto, jossa HÄMY so
 Akustisen keikan yhteydessä HÄMY esittelee muinaissoittimia ja kertoo niiden historiasta, kulttuurista sekä rakennustavoista. Tämä keikkamuoto sopii parhaiten intiimeihin ja rauhallisiin tapahtumiin. 
 {{< /luelisaa >}}
 
+<br>
+<br>
