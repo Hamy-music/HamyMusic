@@ -16,10 +16,7 @@ Live-looppaus teknologian ansiosta keikkaan saa huomattavasti enemmän elämää
 Live-looppaus on vuosien aikana kehittynyt taito jota vain harva onnistuu tekemään niin taitavasti, että he pystyisivät samanaikaisesti pitämään kontaktin yleisöönsä ja luomaan viihdyttävän live-kokemuksen. Koen, että minä olen onnistunut siinä ja voin tarjota kuulijalle täysin ainutlaatuisen kokemuksen! Tämä keikkatyyli sopii niin pieniin, keskikokoisiin kuin myös todella suuriin tapahtumiin! 
 {{< /luelisaa >}}
 
-<br>
-<br>
-<br>
-<br>
+{{< spacer lines="2" >}}
 
 ### AKUSTINEN KEIKKA
 {{< figure src="/kuvat/Akustinen-keikka-logo.jpg" class="gigs-image" >}}

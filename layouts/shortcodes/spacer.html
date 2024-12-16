@@ -1,0 +1,4 @@
+{{- $lines := .Get "lines" | default "1" -}}
+{{- range $i, $e := (seq $lines) }}
+<br>
+{{- end }}
