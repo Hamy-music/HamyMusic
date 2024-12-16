@@ -55,8 +55,9 @@ h3 {
 #social {
     background-image: url('/kuvat/havu_ruskea.svg');
     background-repeat: repeat-y;
-    background-size: 72px;
+    background-size: 79px;
     background-position: center;
+    padding: 5px;
 }
 
 
