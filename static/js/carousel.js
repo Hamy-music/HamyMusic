@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
             slides[nthChild - 1].classList.add('selected');
         };
 
-        // Hidastettu vieritys
         nextBtn.addEventListener('click', () => {
-            ul.scrollBy({ left: ul.offsetWidth * 0.7, behavior: 'smooth' });
+            ul.scrollBy({ left: ul.offsetWidth * 0.6, behavior: 'smooth' });
         });
 
         prevBtn.addEventListener('click', () => {
-            ul.scrollBy({ left: -ul.offsetWidth * 0.7, behavior: 'smooth' });
+            ul.scrollBy({ left: -ul.offsetWidth * 0.6, behavior: 'smooth' });
         });
 
         ul.addEventListener('scroll', debounce(setSelected));
