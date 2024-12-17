@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         nextBtn.addEventListener('click', () => {
-            ul.scrollBy({ left: ul.offsetWidth * 0.6, behavior: 'smooth' });
+            ul.scrollBy({ left: ul.offsetWidth * 0.5, behavior: 'smooth' });
         });
 
         prevBtn.addEventListener('click', () => {
-            ul.scrollBy({ left: -ul.offsetWidth * 0.6, behavior: 'smooth' });
+            ul.scrollBy({ left: -ul.offsetWidth * 0.5, behavior: 'smooth' });
         });
 
         ul.addEventListener('scroll', debounce(setSelected));
