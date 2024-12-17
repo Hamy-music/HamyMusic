@@ -14,18 +14,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'en-about'
-    label: 'about (EN)'
-    folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
@@ -38,17 +27,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
-    fields:
-      - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
-      - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
-
-  - name: 'en-gigs'
-    label: 'Performances (EN)'
-    folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
       - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
@@ -60,24 +39,12 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
       - { label: 'Nimi', name: 'album_title', widget: 'string' }
       - { label: 'Vuosi', name: 'album_year', widget: 'string' }
       - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['albumi', 'single'] }
-
-  - name: 'en-diskografia'
-    label: 'Discography (EN)'
-    folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
-      - { label: 'Nimi', name: 'album_title', widget: 'string' }
-      - { label: 'Vuosi', name: 'album_year', widget: 'string' }
-      - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['album', 'single'] }
 
   - name: 'fi-musicvideos'
     label: 'Music Videos (FI)'
@@ -86,16 +53,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
-    fields:
-      - { label: 'Video ID', name: 'video_id', widget: 'string' }
-
-  - name: 'en-musicvideos'
-    label: 'Music Videos (EN)'
-    folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
 
@@ -106,17 +64,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
-    fields:
-      - { label: 'Media Image', name: 'media_image', widget: 'image' }
-      - { label: 'Caption', name: 'caption', widget: 'string' }
-
-  - name: 'en-media'
-    label: 'Media (EN)'
-    folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Media Image', name: 'media_image', widget: 'image' }
       - { label: 'Caption', name: 'caption', widget: 'string' }
@@ -128,8 +76,75 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
+
+
+  - name: 'en-about'
+    label: 'about (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'en-gigs'
+    label: 'Performances (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
+      - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
+
+
+  - name: 'en-diskografia'
+    label: 'Discography (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
+      - { label: 'Nimi', name: 'album_title', widget: 'string' }
+      - { label: 'Vuosi', name: 'album_year', widget: 'string' }
+      - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['album', 'single'] }
+
+
+  - name: 'en-musicvideos'
+    label: 'Music Videos (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Video ID', name: 'video_id', widget: 'string' }
+
+
+  - name: 'en-media'
+    label: 'Media (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Media Image', name: 'media_image', widget: 'image' }
+      - { label: 'Caption', name: 'caption', widget: 'string' }
 
   - name: 'en-contact'
     label: 'Contact (EN)'
@@ -138,27 +153,6 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }     
-
-  - name: 'fi-social'
-    label: 'Social (FI)'
-    folder: 'content/fi'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Social Media Link', name: 'social_link', widget: 'string' }
-      - { label: 'Social Media Icon', name: 'social_icon', widget: 'image' }
-
-  - name: 'en-social'
-    label: 'Social (EN)'
-    folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Social Media Link', name: 'social_link', widget: 'string' }
-      - { label: 'Social Media Icon', name: 'social_icon', widget: 'image' }
