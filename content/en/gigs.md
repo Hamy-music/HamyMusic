@@ -8,7 +8,7 @@ title: "Performances"
 
 {{< figure src="/kuvat/Live-loop-logo.jpg" class="gigs-image" >}}
 
-A live-loop performance is HÄMY at its best!
+**A live-loop performance is HÄMY at its best!**
 
 {{< readmore id="live-loop-details" >}}
 Thanks to live-looping technology, the performance comes to life with a richer array of soundscapes. Looping allows multiple instruments to be "played" simultaneously and the audience gets to witness in real time how each song takes shape and reaches its final form. 
@@ -23,7 +23,7 @@ Over the years live-looping has become a refined skill, mastered by only a few w
 ### ACOUSTIC PERFORMANCE
 {{< figure src="/kuvat/Akustinen-keikka-logo.jpg" class="gigs-image" >}}
 
-An acoustic performance is an excellent choice for smaller events.
+**An acoustic performance is an excellent choice for smaller events.**
 
 {{< readmore id="acoustic-details" >}}
 HÄMY plays original songs acoustically on the guitar and incorporates throat singing. Past acoustic performances have been held in venues like cafés, outdoor shelters, and even smaller Viking or medieval-themed events.
