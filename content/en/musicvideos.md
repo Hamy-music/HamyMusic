@@ -8,7 +8,6 @@ videos:
   - uPxBttnunoI
   - z4kWfA-c9Mk
   - Gy0omY_BBeQ
-video_id: 2GuubC_SxXE
 ---
 ## VIDEOS
 {{< videocarousel >}}
