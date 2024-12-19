@@ -2,8 +2,6 @@
 title: About
 introvideo_src: 0REyF3Lf5b0
 ---
-<!--# HÄMY syntyi halusta luoda jotain omaa, ainutlaatuista ja massasta poikkeavaa. Jotain hämyistä.-->
-
 # HÄMY – Uniikkia ja valtavirrasta poikkeavaa musiikkia
 
 ”Olen lapsuudestani saakka ollut kiinnostunut tarinoista, historiasta ja siitä miten musiikin avulla pääsee kokemaan erilaisia maailmoja ja tunteita. Tahdon tuoda nuo lapsena kokemani tunteet takaisin ja rikkoa myös omia ajatuksiani siitä, millaista musiikin ”kuuluu olla”. 
