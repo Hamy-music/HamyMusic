@@ -22,8 +22,8 @@ collections:
   - name: 'fi-gigs'
     label: 'Performances (FI)'
     folder: 'content/fi'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: false
+    slug: 'gigs'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
@@ -96,8 +96,8 @@ collections:
   - name: 'en-gigs'
     label: 'Performances (EN)'
     folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: false
+    slug: 'gigs'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
