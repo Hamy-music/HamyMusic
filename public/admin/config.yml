@@ -33,18 +33,18 @@ collections:
       - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
 
   - name: 'fi-diskografia'
-    label: 'Discography (FI)'
+    label: 'Diskografia (FI)'
     folder: 'content/fi'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
-      preview_path: "/{{slug}}"  
+      preview_path: "/{{slug}}"
     fields:
-      - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
-      - { label: 'Nimi', name: 'album_title', widget: 'string' }
-      - { label: 'Vuosi', name: 'album_year', widget: 'string' }
-      - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['albumi', 'single'] }
+      - { label: 'Album Image', name: 'image', widget: 'image' }
+      - { label: 'Album Title', name: 'title', widget: 'string' }
+      - { label: 'Album Type', name: 'type', widget: 'select', options: ['single', 'albumi'] }
+      - { label: 'Release Year', name: 'year', widget: 'string' }
 
   - name: 'fi-musicvideos'
     label: 'Music Videos (FI)'
@@ -114,13 +114,12 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
-      preview_path: "/{{slug}}"  
+      preview_path: "/{{slug}}"
     fields:
-      - { label: 'Album/Singlen Kansikuva', name: 'album_image', widget: 'image' }
-      - { label: 'Nimi', name: 'album_title', widget: 'string' }
-      - { label: 'Vuosi', name: 'album_year', widget: 'string' }
-      - { label: 'Tyypi (albumi/single)', name: 'album_type', widget: 'select', options: ['album', 'single'] }
-
+      - { label: 'Album Image', name: 'image', widget: 'image' }
+      - { label: 'Album Title', name: 'title', widget: 'string' }
+      - { label: 'Album Type', name: 'type', widget: 'select', options: ['single', 'album'] }
+      - { label: 'Release Year', name: 'year', widget: 'string' }
 
   - name: 'en-musicvideos'
     label: 'Music Videos (EN)'
