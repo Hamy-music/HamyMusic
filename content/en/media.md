@@ -1,8 +1,9 @@
 ---
 title: Media
+description: "images for the media "
 ---
 
 ## FOR THE MEDIA
-<!--Tänne medialle vapaaseen käyttöön kuvia-->
+
 
 {{< mediagallery >}}

@@ -1,5 +1,6 @@
 ---
 title: "Performances"
+description: "Information and details about HÄMY's performances"
 ---
 
 ## PERFORMANCES

@@ -1,6 +1,6 @@
 ---
 title: "HÄMY"
-description: "Tervetuloa HÄMYn nettisivuille"
+description: "Welcome to HÄMY's website"
 
 
 ---

@@ -26,6 +26,7 @@ albums:
     type: "albumi"
     year: "2019"
 
+description: "diskografia"
 ---
 
 ## DISKOGRAFIA
