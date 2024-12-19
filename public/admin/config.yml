@@ -16,7 +16,6 @@ collections:
       preview: true
       preview_path: "/{{slug}}"  
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
@@ -56,6 +55,7 @@ collections:
       preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
+      - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
 
   - name: 'fi-media'
     label: 'Media (FI)'
@@ -72,7 +72,7 @@ collections:
   - name: 'fi-contact'
     label: 'Contact (FI)'
     folder: 'content/fi'
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
@@ -90,7 +90,6 @@ collections:
       preview: true
       preview_path: "/{{slug}}"  
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
@@ -127,10 +126,11 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: true
-      preview_path: "/{{slug}}"  
+    preview: true
+    preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
+      - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
 
 
   - name: 'en-media'
@@ -148,7 +148,7 @@ collections:
   - name: 'en-contact'
     label: 'Contact (EN)'
     folder: 'content/en'
-    create: true
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
