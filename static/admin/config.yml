@@ -16,6 +16,7 @@ collections:
       preview: true
       preview_path: "/{{slug}}"  
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
@@ -90,6 +91,7 @@ collections:
       preview: true
       preview_path: "/{{slug}}"  
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
