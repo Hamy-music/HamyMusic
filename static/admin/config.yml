@@ -73,7 +73,7 @@ collections:
     label: 'Contact (FI)'
     folder: 'content/fi'
     create: false
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'contact'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
@@ -126,8 +126,8 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-    preview: true
-    preview_path: "/{{slug}}"  
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
       - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
@@ -149,7 +149,7 @@ collections:
     label: 'Contact (EN)'
     folder: 'content/en'
     create: false
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'contact'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
