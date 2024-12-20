@@ -29,6 +29,6 @@ albums:
 description: "discography"
 ---
 
-## DISKOGRAFIA
+## DISKOGRAPHY
 
 {{< albumgrid >}}

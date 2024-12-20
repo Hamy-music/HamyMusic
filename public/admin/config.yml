@@ -16,14 +16,15 @@ collections:
       preview: true
       preview_path: "/{{slug}}"  
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'fi-gigs'
     label: 'Performances (FI)'
     folder: 'content/fi'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: false
+    slug: 'gigs'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
@@ -73,7 +74,7 @@ collections:
     label: 'Contact (FI)'
     folder: 'content/fi'
     create: false
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'contact'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
@@ -90,14 +91,15 @@ collections:
       preview: true
       preview_path: "/{{slug}}"  
     fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'en-gigs'
     label: 'Performances (EN)'
     folder: 'content/en'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: false
+    slug: 'gigs'
     editor:
       preview: true
       preview_path: "/{{slug}}"  
@@ -126,8 +128,8 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-    preview: true
-    preview_path: "/{{slug}}"  
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
       - { label: 'Video ID', name: 'video_id', widget: 'string' }
       - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
@@ -149,7 +151,7 @@ collections:
     label: 'Contact (EN)'
     folder: 'content/en'
     create: false
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: 'contact'
     editor:
       preview: true
       preview_path: "/{{slug}}"  

@@ -16,14 +16,17 @@
 <body>
 
     <header>
-    
+
         <div id="nav">
             <ul id="nav-list">
-                <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A" target="_blank"><span>Spotify</span></a></li>
+                <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A"
+                        target="_blank"><span>Spotify</span></a></li>
                 <li><a href="http://www.youtube.com/@hamy_music_finland" target="_blank"><span>YouTube</span></a></li>
                 <li><a href="https://www.facebook.com/hamymusiikki" target="_blank"><span>Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/hamy_music_finland" target="_blank"><span>Instagram</span></a></li>
-                <li><a href="https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON" target="_blank"><span>Levykauppa Äx</span></a></li>
+                <li><a href="https://www.instagram.com/hamy_music_finland" target="_blank"><span>Instagram</span></a>
+                </li>
+                <li><a href="https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON"
+                        target="_blank"><span>Levykauppa Äx</span></a></li>
             </ul>
 
         </div>
@@ -33,19 +36,20 @@
                 <img src="/kuvat/finland (2).png" style="width: 20px; height: auto; margin-right: 5px;" alt="Suomi">
             </a>
             <a href="/en" class="language-button">
-                <img src="/kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;" alt="English">
+                <img src="/kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;"
+                    alt="English">
             </a>
         </div>
 
     </header>
-    
+
 
     <main>
 
         <section id="intro">
             {{ .Content }}
         </section>
-    
+
         <section id="about">
             {{ with .Site.GetPage "content" "about"}}
             {{ .Content }}
@@ -57,44 +61,43 @@
             {{ .Content }}
             {{ end }}
         </section>
-    
+
         <section id="discography">
             {{ with .Site.GetPage "content" "diskografia" }}
             {{ .Content }}
             {{ end }}
         </section>
-    
+
         <section id="musicvideos">
             {{ with .Site.GetPage "content" "musicvideos" }}
             {{ .Content }}
             {{ end }}
         </section>
-    
+
         <section id="media">
             {{ with .Site.GetPage "content" "media" }}
             {{ .Content }}
             {{ end }}
         </section>
-    
+
         <section id="contact">
             {{ with .Site.GetPage "content" "contact" }}
             {{ .Content }}
             {{ end }}
         </section>
-    
+
         <section id="social">
             {{ with .Site.GetPage "content" "social" }}
             {{ .Content }}
             {{ end }}
         </section>
-    
+
     </main>
-    
+
 
     <footer>
         <p>&copy; 2024 {{ .Site.Title }}</p>
     </footer>
-
 </body>
 
 </html>
