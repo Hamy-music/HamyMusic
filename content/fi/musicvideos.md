@@ -17,5 +17,5 @@ videos:
     upload_date: "2023-03-17"
 ---
 
-## VIDEOS
+## VIDEOT
 {{< videocarousel >}}
