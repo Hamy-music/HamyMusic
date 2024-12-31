@@ -12,12 +12,14 @@ title = "HÄMY"
   title = "HÄMY"
   languageCode = "fi"
   contentDir = "content/fi"
+  description = "HÄMY – Uniikkia ja valtavirrasta poikkeavaa musiikkia"
   weight = 1
 
 [languages.en]
   title = "HÄMY"
   languageCode = "en"
   contentDir = "content/en"
+  description = "HÄMY - Unique music beyond the mainstream"
   weight = 2
 
 

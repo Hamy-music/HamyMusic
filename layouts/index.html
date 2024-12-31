@@ -20,8 +20,11 @@
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
     <meta property="og:title" content="HÄMY">
-    <meta property="og:locale" content="{{ .Site.Language.Lang }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:locale" content="{{ .Site.Language.Lang }}_{{ .Site.Language.Country }}">
     <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="HÄMY">
+    <meta name="twitter:card" content="summary_large_image">
     
 
 </head>
