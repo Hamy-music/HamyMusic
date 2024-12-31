@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://hamymusic.com/"
 defaultContentLanguage = "fi"
 
 title = "HÄMY"
