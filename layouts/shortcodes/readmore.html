@@ -1,7 +1,9 @@
 {{ $id := .Get "id" | default "default-id" }}
+
 <button class="read-more-btn" onclick="document.getElementById('{{ $id }}').style.display='block'; this.style.display='none';">
-  Read more
+  {{ if eq .Site.Language.Lang "fi" }}Lue lisää{{ else }}Read more{{ end }}
 </button>
+
 <div id="{{ $id }}" style="display:none;">
   {{ .Inner }}
 </div>
