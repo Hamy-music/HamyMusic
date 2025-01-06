@@ -3,94 +3,157 @@ backend:
   branch: main 
   identity_url: https://hamymusic.netlify.app/.netlify/identity 
   
-media_folder: "static/kuvat"
-public_folder: "/kuvat"
-
+media_folder: static/kuvat
+public_folder: /kuvat
 collections:
-  - name: "fi-about"
-    label: "About (FI)"
-    file: "content/fi/about.md"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Intro Video URL", name: "introvideo_src", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "fi-gigs"
-    label: "Gigs (FI)"
-    file: "content/fi/gigs.md"
+  - name: 'fi-about'
+    label: 'about (FI)'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Gig Image", name: "gig_image", widget: "image" }
-      - { label: "Gig Description", name: "gig_description", widget: "markdown" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: "fi-diskografia"
-    label: "Diskografia (FI)"
-    file: "content/fi/diskografia.md"
+  - name: 'fi-gigs'
+    label: 'Performances (FI)'
+    folder: 'content/fi'
+    create: false
+    slug: 'gigs'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Album Image", name: "image", widget: "image" }
-      - { label: "Album Title", name: "title", widget: "string" }
-      - { label: "Album Type", name: "type", widget: "select", options: ["single", "albumi"] }
-      - { label: "Release Year", name: "year", widget: "string" }
+      - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
+      - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
 
-  - name: "fi-musicvideos"
-    label: "Music Videos (FI)"
-    file: "content/fi/musicvideos.md"
+  - name: 'fi-diskografia'
+    label: 'Diskografia (FI)'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"
     fields:
-      - { label: "Video ID", name: "video_id", widget: "string" }
-      - { label: "Upload Date", name: "upload_date", widget: "datetime" }
+      - { label: 'Album Image', name: 'image', widget: 'image' }
+      - { label: 'Album Title', name: 'title', widget: 'string' }
+      - { label: 'Album Type', name: 'type', widget: 'select', options: ['single', 'albumi'] }
+      - { label: 'Release Year', name: 'year', widget: 'string' }
 
-  - name: "fi-media"
-    label: "Media (FI)"
-    file: "content/fi/media.md"
+  - name: 'fi-musicvideos'
+    label: 'Music Videos (FI)'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Media Image", name: "media_image", widget: "image" }
-      - { label: "Caption", name: "caption", widget: "string" }
+      - { label: 'Video ID', name: 'video_id', widget: 'string' }
+      - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
 
-  - name: "fi-contact"
-    label: "Contact (FI)"
-    file: "content/fi/contact.md"
+  - name: 'fi-media'
+    label: 'Media (FI)'
+    folder: 'content/fi'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Contact Information", name: "contact_info", widget: "markdown" }
+      - { label: 'Media Image', name: 'media_image', widget: 'image' }
+      - { label: 'Caption', name: 'caption', widget: 'string' }
 
-  - name: "en-about"
-    label: "About (EN)"
-    file: "content/en/about.md"
+  - name: 'fi-contact'
+    label: 'Contact (FI)'
+    folder: 'content/fi'
+    create: false
+    slug: 'contact'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Intro Video URL", name: "introvideo_src", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
 
-  - name: "en-gigs"
-    label: "Gigs (EN)"
-    file: "content/en/gigs.md"
-    fields:
-      - { label: "Gig Image", name: "gig_image", widget: "image" }
-      - { label: "Gig Description", name: "gig_description", widget: "markdown" }
 
-  - name: "en-diskografia"
-    label: "Discography (EN)"
-    file: "content/en/diskografia.md"
+  - name: 'en-about'
+    label: 'about (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Album Image", name: "image", widget: "image" }
-      - { label: "Album Title", name: "title", widget: "string" }
-      - { label: "Album Type", name: "type", widget: "select", options: ["single", "album"] }
-      - { label: "Release Year", name: "year", widget: "string" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: "en-musicvideos"
-    label: "Music Videos (EN)"
-    file: "content/en/musicvideos.md"
+  - name: 'en-gigs'
+    label: 'Performances (EN)'
+    folder: 'content/en'
+    create: false
+    slug: 'gigs'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
     fields:
-      - { label: "Video ID", name: "video_id", widget: "string" }
-      - { label: "Upload Date", name: "upload_date", widget: "datetime" }
+      - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
+      - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
 
-  - name: "en-media"
-    label: "Media (EN)"
-    file: "content/en/media.md"
-    fields:
-      - { label: "Media Image", name: "media_image", widget: "image" }
-      - { label: "Caption", name: "caption", widget: "string" }
 
-  - name: "en-contact"
-    label: "Contact (EN)"
-    file: "content/en/contact.md"
+  - name: 'en-diskografia'
+    label: 'Discography (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"
     fields:
-      - { label: "Contact Information", name: "contact_info", widget: "markdown" }
+      - { label: 'Album Image', name: 'image', widget: 'image' }
+      - { label: 'Album Title', name: 'title', widget: 'string' }
+      - { label: 'Album Type', name: 'type', widget: 'select', options: ['single', 'album'] }
+      - { label: 'Release Year', name: 'year', widget: 'string' }
+
+  - name: 'en-musicvideos'
+    label: 'Music Videos (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Video ID', name: 'video_id', widget: 'string' }
+      - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
+
+
+  - name: 'en-media'
+    label: 'Media (EN)'
+    folder: 'content/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Media Image', name: 'media_image', widget: 'image' }
+      - { label: 'Caption', name: 'caption', widget: 'string' }
+
+  - name: 'en-contact'
+    label: 'Contact (EN)'
+    folder: 'content/en'
+    create: false
+    slug: 'contact'
+    editor:
+      preview: true
+      preview_path: "/{{slug}}"  
+    fields:
+      - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }     
