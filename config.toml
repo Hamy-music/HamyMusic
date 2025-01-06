@@ -35,3 +35,14 @@ media =[
     { url = "/kuvat/2022 Samuel Vielma.jpg", alt = "(C) Samuel Vielma" },
     { url = "/kuvat/2020 Filip Smeds.jpg", alt = "(C) Filip Smed" }
 ]
+
+
+[permalinks]
+  about = "/:year/:month/:day/:slug/"
+  gigs = "/:year/:month/:day/:slug/"
+  musicvideos = "/:year/:month/:day/:slug/"
+  media = "/:year/:month/:day/:slug/"
+  contact = "/:year/:month/:day/:slug/"
+  diskografia = "/:year/:month/:day/:slug/"
+  social = "/:year/:month/:day/:slug/"
+  
