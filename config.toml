@@ -45,4 +45,4 @@ media =[
   contact = "/:year/:month/:day/:slug/"
   diskografia = "/:year/:month/:day/:slug/"
   social = "/:year/:month/:day/:slug/"
-  
+
