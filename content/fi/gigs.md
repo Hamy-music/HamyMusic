@@ -1,6 +1,7 @@
 ---
 title: "Performances"
 description: "Kuvaukset HÄMY:n keikoista"
+slug: "performances"
 ---
 
 ## KEIKAT

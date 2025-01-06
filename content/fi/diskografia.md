@@ -1,5 +1,6 @@
 ---
 title: "Diskografia"
+slug: "diskografia"
 albums:
   - image: "/kuvat/Mitä me muistelemme kun kuolemme.jpg"
     title: "Mitä me muistelemme kun kuolemme"

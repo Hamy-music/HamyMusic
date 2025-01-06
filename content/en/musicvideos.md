@@ -1,5 +1,6 @@
 ---
 title: "Music Videos"
+slug: "musicvideos"
 videos:
   - video_id: "kjFzJ8qIYWI"
     upload_date: "2024-12-10"
