@@ -1,7 +1,6 @@
 ---
 title: About
 introvideo_src: 0REyF3Lf5b0
-slug: "about"
 ---
 # HÄMY – Uniikkia ja valtavirrasta poikkeavaa musiikkia
 
