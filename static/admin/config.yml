@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main 
+  branch: main
   identity_url: https://hamymusic.netlify.app/.netlify/identity 
 
 media_folder: "static/kuvat"
@@ -14,9 +14,9 @@ collections:
         label: 'About'
         name: 'about'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Title', name: 'title', id: 'title', widget: 'string' }
+          - { label: 'Intro Video URL', name: 'introvideo_src', id: 'introvideo_src', widget: 'string' }
+          - { label: 'Body', name: 'body', id: 'body', widget: 'markdown' }
 
   - name: 'fi-gigs'
     label: 'Performances (FI)'
@@ -25,8 +25,8 @@ collections:
         label: 'Gigs'
         name: 'gigs'
         fields:
-          - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
-          - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
+          - { label: 'Gig Image', name: 'gig_image', id: 'gig_image', widget: 'image' }
+          - { label: 'Gig Description', name: 'gig_description', id: 'gig_description', widget: 'markdown' }
 
   - name: 'fi-diskografia'
     label: 'Diskografia (FI)'
@@ -35,10 +35,10 @@ collections:
         label: 'Diskografia'
         name: 'diskografia'
         fields:
-          - { label: 'Album Image', name: 'album_image', widget: 'image' }
-          - { label: 'Album Title', name: 'album_title', widget: 'string' }
-          - { label: 'Album Type', name: 'album_type', widget: 'select', options: ['single', 'albumi'] }
-          - { label: 'Release Year', name: 'release_year', widget: 'string' }
+          - { label: 'Album Image', name: 'album_image', id: 'album_image', widget: 'image' }
+          - { label: 'Album Title', name: 'album_title', id: 'album_title', widget: 'string' }
+          - { label: 'Album Type', name: 'album_type', id: 'album_type', widget: 'select', options: ['single', 'albumi'] }
+          - { label: 'Release Year', name: 'release_year', id: 'release_year', widget: 'string' }
 
   - name: 'fi-musicvideos'
     label: 'Music Videos (FI)'
@@ -47,8 +47,8 @@ collections:
         label: 'Music Videos'
         name: 'musicvideos'
         fields:
-          - { label: 'Video ID', name: 'video_id', widget: 'string' }
-          - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
+          - { label: 'Video ID', name: 'video_id', id: 'video_id', widget: 'string' }
+          - { label: 'Upload Date', name: 'upload_date', id: 'upload_date', widget: 'datetime' }
 
   - name: 'fi-media'
     label: 'Media (FI)'
@@ -57,8 +57,8 @@ collections:
         label: 'Media'
         name: 'media'
         fields:
-          - { label: 'Media Image', name: 'media_image', widget: 'image' }
-          - { label: 'Caption', name: 'caption', widget: 'string' }
+          - { label: 'Media Image', name: 'media_image', id: 'media_image', widget: 'image' }
+          - { label: 'Caption', name: 'caption', id: 'caption', widget: 'string' }
 
   - name: 'fi-contact'
     label: 'Contact (FI)'
@@ -67,7 +67,7 @@ collections:
         label: 'Contact'
         name: 'contact'
         fields:
-          - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
+          - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
 
   - name: 'en-about'
     label: 'about (EN)'
@@ -76,9 +76,9 @@ collections:
         label: 'About'
         name: 'about'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Intro Video URL', name: 'introvideo_src', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Title', name: 'title', id: 'title', widget: 'string' }
+          - { label: 'Intro Video URL', name: 'introvideo_src', id: 'introvideo_src', widget: 'string' }
+          - { label: 'Body', name: 'body', id: 'body', widget: 'markdown' }
 
   - name: 'en-gigs'
     label: 'Performances (EN)'
@@ -87,8 +87,8 @@ collections:
         label: 'Gigs'
         name: 'gigs'
         fields:
-          - { label: 'Gig Image', name: 'gig_image', widget: 'image' }
-          - { label: 'Gig Description', name: 'gig_description', widget: 'markdown' }
+          - { label: 'Gig Image', name: 'gig_image', id: 'gig_image', widget: 'image' }
+          - { label: 'Gig Description', name: 'gig_description', id: 'gig_description', widget: 'markdown' }
 
   - name: 'en-diskografia'
     label: 'Discography (EN)'
@@ -97,10 +97,10 @@ collections:
         label: 'Discography'
         name: 'diskografia'
         fields:
-          - { label: 'Album Image', name: 'album_image', widget: 'image' }
-          - { label: 'Album Title', name: 'album_title', widget: 'string' }
-          - { label: 'Album Type', name: 'album_type', widget: 'select', options: ['single', 'album'] }
-          - { label: 'Release Year', name: 'release_year', widget: 'string' }
+          - { label: 'Album Image', name: 'album_image', id: 'album_image', widget: 'image' }
+          - { label: 'Album Title', name: 'album_title', id: 'album_title', widget: 'string' }
+          - { label: 'Album Type', name: 'album_type', id: 'album_type', widget: 'select', options: ['single', 'album'] }
+          - { label: 'Release Year', name: 'release_year', id: 'release_year', widget: 'string' }
 
   - name: 'en-musicvideos'
     label: 'Music Videos (EN)'
@@ -109,8 +109,8 @@ collections:
         label: 'Music Videos'
         name: 'musicvideos'
         fields:
-          - { label: 'Video ID', name: 'video_id', widget: 'string' }
-          - { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
+          - { label: 'Video ID', name: 'video_id', id: 'video_id', widget: 'string' }
+          - { label: 'Upload Date', name: 'upload_date', id: 'upload_date', widget: 'datetime' }
 
   - name: 'en-media'
     label: 'Media (EN)'
@@ -119,8 +119,8 @@ collections:
         label: 'Media'
         name: 'media'
         fields:
-          - { label: 'Media Image', name: 'media_image', widget: 'image' }
-          - { label: 'Caption', name: 'caption', widget: 'string' }
+          - { label: 'Media Image', name: 'media_image', id: 'media_image', widget: 'image' }
+          - { label: 'Caption', name: 'caption', id: 'caption', widget: 'string' }
 
   - name: 'en-contact'
     label: 'Contact (EN)'
@@ -129,4 +129,4 @@ collections:
         label: 'Contact'
         name: 'contact'
         fields:
-          - { label: 'Contact Information', name: 'contact_info', widget: 'markdown' }
+          - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
