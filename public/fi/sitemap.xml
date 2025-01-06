@@ -86,16 +86,16 @@
                 href="http://localhost:1313/musicvideos/"
                 />
   </url><url>
-    <loc>http://localhost:1313/gigs/</loc>
+    <loc>http://localhost:1313/performances/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/gigs/"
+                href="http://localhost:1313/en/performances/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fi"
-                href="http://localhost:1313/gigs/"
+                href="http://localhost:1313/performances/"
                 />
   </url><url>
     <loc>http://localhost:1313/social/</loc>
