@@ -37,12 +37,3 @@ media =[
 ]
 
 
-[permalinks]
-  about = "/:year/:month/:day/:slug/"
-  gigs = "/:year/:month/:day/:slug/"
-  musicvideos = "/:year/:month/:day/:slug/"
-  media = "/:year/:month/:day/:slug/"
-  contact = "/:year/:month/:day/:slug/"
-  diskografia = "/:year/:month/:day/:slug/"
-  social = "/:year/:month/:day/:slug/"
-

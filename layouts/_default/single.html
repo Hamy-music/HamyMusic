@@ -26,6 +26,7 @@
 <body>
 
     <header>
+
         <div id="nav">
             <ul id="nav-list">
                 <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A"
@@ -42,22 +43,70 @@
 
         <div id="language-selector">
             <a href="/fi" class="language-button">
-                <img src="kuvat/finland (2).png" style="width: 20px; height: auto; margin-right: 5px;" alt="Suomi">
+                <img src="/kuvat/finland (2).png" style="width: 20px; height: auto; margin-right: 5px;" alt="Suomi">
             </a>
             <a href="/en" class="language-button">
-                <img src="kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;" alt="English">
+                <img src="/kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;"
+                    alt="English">
             </a>
         </div>
 
     </header>
 
     <main>
-        {{ .Content }}
+        {{ if eq .File.Path "content/fi/about.md" }}
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Params.introvideo_src }}</p>
+            {{ .Content }}
+        {{ else if eq .File.Path "content/fi/gigs.md" }}
+            <h2>Gigs</h2>
+            <img src="{{ .Params.gig_image }}" alt="Gig Image">
+            {{ .Content }}
+        {{ else if eq .File.Path "content/fi/diskografia.md" }}
+            <h2>{{ .Title }}</h2>
+            <img src="{{ .Params.image }}" alt="Album Image">
+            <p>{{ .Params.type }}, {{ .Params.year }}</p>
+        {{ else if eq .File.Path "content/fi/musicvideos.md" }}
+            <h2>Music Videos</h2>
+            <p>Video ID: {{ .Params.video_id }}</p>
+            <p>Upload Date: {{ .Params.upload_date }}</p>
+        {{ else if eq .File.Path "content/fi/media.md" }}
+            <h2>Media</h2>
+            <img src="{{ .Params.media_image }}" alt="Media Image">
+            <p>{{ .Params.caption }}</p>
+        {{ else if eq .File.Path "content/fi/contact.md" }}
+            <h2>Contact</h2>
+            {{ .Content }}
+        {{ else if eq .File.Path "content/en/about.md" }}
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Params.introvideo_src }}</p>
+            {{ .Content }}
+        {{ else if eq .File.Path "content/en/gigs.md" }}
+            <h2>Gigs</h2>
+            <img src="{{ .Params.gig_image }}" alt="Gig Image">
+            {{ .Content }}
+        {{ else if eq .File.Path "content/en/diskografia.md" }}
+            <h2>{{ .Title }}</h2>
+            <img src="{{ .Params.image }}" alt="Album Image">
+            <p>{{ .Params.type }}, {{ .Params.year }}</p>
+        {{ else if eq .File.Path "content/en/musicvideos.md" }}
+            <h2>Music Videos</h2>
+            <p>{{ .Params.video_id }}</p>
+            <p>Upload Date: {{ .Params.upload_date }}</p>
+        {{ else if eq .File.Path "content/en/media.md" }}
+            <h2>Media</h2>
+            <img src="{{ .Params.media_image }}" alt="Media Image">
+            <p>{{ .Params.caption }}</p>
+        {{ else if eq .File.Path "content/en/contact.md" }}
+            <h2>Contact</h2>
+            {{ .Content }}
+        {{ else if eq .File.Path "content/_index.md" }}
+            {{ .Content }}
+        {{ end }}
     </main>
 
     <footer>
         <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
     </footer>
 </body>
-
 </html>
