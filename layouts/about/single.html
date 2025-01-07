@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,45 +19,53 @@
     <meta property="og:description" content="{{ .Site.Params.description }}">
     <meta property="og:locale" content="{{ .Site.Language.Lang }}">
     <meta property="og:url" content="{{ .Permalink }}">
-
 </head>
 
 <body>
-
     <header>
-
         <div id="nav">
             <ul id="nav-list">
-                <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A"
-                        target="_blank"><span>Spotify</span></a></li>
+                <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A" target="_blank"><span>Spotify</span></a></li>
                 <li><a href="http://www.youtube.com/@hamy_music_finland" target="_blank"><span>YouTube</span></a></li>
                 <li><a href="https://www.facebook.com/hamymusiikki" target="_blank"><span>Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/hamy_music_finland" target="_blank"><span>Instagram</span></a>
-                </li>
-                <li><a href="https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON"
-                        target="_blank"><span>Levykauppa Äx</span></a></li>
+                <li><a href="https://www.instagram.com/hamy_music_finland" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON" target="_blank"><span>Levykauppa Äx</span></a></li>
             </ul>
 
         </div>
 
         <div id="language-selector">
             <a href="/fi" class="language-button">
-                <img src="/kuvat/finland (2).png" style="width: 20px; height: auto; margin-right: 5px;" alt="Suomi">
+                <img src="kuvat/finland (2).png" style="width: 20px; height: auto; margin-right: 5px;" alt="Suomi">
             </a>
             <a href="/en" class="language-button">
-                <img src="/kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;"
-                    alt="English">
+                <img src="kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;" alt="English">
             </a>
         </div>
 
     </header>
 
     <main>
-        {{ .Content }}
+        <section id="about">
+            <h1>{{ .Title }}</h1>
+
+            {{ .Content }}
+
+            {{ with .Params.introvideo_src }}
+            <div class="responsive-video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/{{ . }}" 
+                    allowfullscreen 
+                    title="YouTube Video">
+                </iframe>
+            </div>
+            {{ end }}
+        </section>
     </main>
 
     <footer>
         <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
     </footer>
 </body>
+
 </html>

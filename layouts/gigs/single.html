@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="/js/carousel.js" defer></script>
+    <link rel="icon" href="/kuvat/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="32x32" href="/kuvat/favicon.png">
+
+    <meta property="og:image" content="https://hamymusic.com/kuvat/aaaicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HÄMY">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:locale" content="{{ .Site.Language.Lang }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <ul id="nav-list">
+                <li><a href="https://open.spotify.com/artist/2t5pBK7XsEqYnTVHv3kMes?si=wX8svzSeRJmHc0Sd_nVS8A" target="_blank"><span>Spotify</span></a></li>
+                <li><a href="http://www.youtube.com/@hamy_music_finland" target="_blank"><span>YouTube</span></a></li>
+                <li><a href="https://www.facebook.com/hamymusiikki" target="_blank"><span>Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/hamy_music_finland" target="_blank"><span>Instagram</span></a></li>
+                <li><a href="https://www.levykauppax.fi/artist/hamy/?srsltid=AfmBOoot1ymV4ld4QBDZ3sKl2RbUl16rIp0n2EuPiJO09G0gM2TEghON" target="_blank"><span>Levykauppa Äx</span></a></li>
+            </ul>
+        </div>
+
+        <div id="language-selector">
+            <a href="/fi" class="language-button">
+                <img src="kuvat/finland (2).png" style="width: 20px; height: auto; margin-right: 5px;" alt="Suomi">
+            </a>
+            <a href="/en" class="language-button">
+                <img src="kuvat/united-kingdom.png" style="width: 20px; height: auto; margin-right: 5px;" alt="English">
+            </a>
+        </div>
+    </header>
+
+    <main class="gigs-container">
+        <header>
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Description }}</p>
+        </header>
+
+        <section class="gig-item">
+            <h2>{{ if eq .Site.Language.Lang "fi" }}Live-Looppaus Keikka{{ else }}Live Loop Performance{{ end }}</h2>
+            <figure class="gigs-image">
+                <img src="/kuvat/Live-loop-logo.jpg" alt="Live-loop logo">
+            </figure>
+            <p><strong>{{ if eq .Site.Language.Lang "fi" }}Live-looppaus keikka on HÄMYÄ parhaimmillaan!{{ else }}A live-loop performance is HÄMY at its best!{{ end }}</strong></p>
+
+            <button class="read-more-btn" onclick="document.getElementById('live-loop-details').style.display='block'; this.style.display='none';">
+                {{ if eq .Site.Language.Lang "fi" }}Lue lisää{{ else }}Read more{{ end }}
+            </button>
+            <div id="live-loop-details" style="display:none;">
+                <p>
+                    {{ if eq .Site.Language.Lang "fi" }}
+                    Live-looppaus teknologian ansiosta keikkaan saa huomattavasti enemmän elämää ja erilaisia äänimaisemia. Looppaus mahdollistaa useiden soittimien soittamisen “samanaikaisesti” ja ihmiset näkevät livenä sen miten kappale muodostuu lopulliseen muotoonsa.
+                    {{ else }}
+                    Thanks to live-looping technology, the performance comes to life with a richer array of soundscapes. Looping allows multiple instruments to be "played" simultaneously and the audience gets to witness in real time how each song takes shape and reaches its final form.
+                    {{ end }}
+                </p>
+                <p>
+                    {{ if eq .Site.Language.Lang "fi" }}
+                    Live-looppaus on vuosien aikana kehittynyt taito jota vain harva onnistuu tekemään niin taitavasti, että he pystyisivät samanaikaisesti pitämään kontaktin yleisöönsä ja luomaan viihdyttävän live-kokemuksen. Koen, että minä olen onnistunut siinä ja voin tarjota kuulijalle täysin ainutlaatuisen kokemuksen! Tämä keikkatyyli sopii niin pieniin, keskikokoisiin kuin myös todella suuriin tapahtumiin!
+                    {{ else }}
+                    Over the years live-looping has become a refined skill, mastered by only a few who can simultaneously maintain a connection with their audience while delivering an entertaining live experience. I believe I’ve achieved this balance and can offer listeners a truly unique experience! This performance style is perfect for small, medium and even very large events.
+                    {{ end }}
+                </p>
+            </div>
+
+            <br><br>
+        </section>
+
+        <section class="gig-item">
+            <h2>{{ if eq .Site.Language.Lang "fi" }}Akustinen Keikka{{ else }}Acoustic Performance{{ end }}</h2>
+            <figure class="gigs-image">
+                <img src="/kuvat/Akustinen-keikka-logo.jpg" alt="Akustinen keikka logo">
+            </figure>
+            <p><strong>{{ if eq .Site.Language.Lang "fi" }}Akustinen keikka sopii erinomaisesti pieniin tilaisuuksiin.{{ else }}An acoustic performance is an excellent choice for smaller events.{{ end }}</strong></p>
+
+            <button class="read-more-btn" onclick="document.getElementById('acoustic-details').style.display='block'; this.style.display='none';">
+                {{ if eq .Site.Language.Lang "fi" }}Lue lisää{{ else }}Read more{{ end }}
+            </button>
+            <div id="acoustic-details" style="display:none;">
+                <p>
+                    {{ if eq .Site.Language.Lang "fi" }}
+                    Akustinen keikka on pienille tapahtumille oivallinen keikkamuoto, jossa HÄMY soittaa omia kappaleitaan akustisesti kitaralla ja kurkkulaulaa. Akustisia keikkoja on aiemmin ollut muun muassa kahviloissa, laavuilla sekä myös pienemmissä viikinki-/keskiaikatapahtumissa.
+                    {{ else }}
+                    HÄMY plays original songs acoustically on the guitar and incorporates throat singing. Past acoustic performances have been held in venues like cafés, outdoor shelters, and even smaller Viking or medieval-themed events.
+                    {{ end }}
+                </p>
+                <p>
+                    {{ if eq .Site.Language.Lang "fi" }}
+                    Akustisen keikan yhteydessä HÄMY esittelee muinaissoittimia ja kertoo niiden historiasta, kulttuurista sekä rakennustavoista. Tämä keikkamuoto sopii parhaiten intiimeihin ja rauhallisiin tapahtumiin.
+                    {{ else }}
+                    During these performances, HÄMY also showcases ancient instruments and shares their history, cultural significance, and crafting techniques. This performance style is best suited for intimate and tranquil events.
+                    {{ end }}
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; {{ now.Format "2006" }}  {{ .Site.Title }}</p>
+    </footer>
+</body>
+</html>
