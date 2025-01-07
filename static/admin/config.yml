@@ -1,13 +1,14 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: https://hamymusic.netlify.app/.netlify/identity 
+  identity_url: https://hamymusic.netlify.app/.netlify/identity
 
 media_folder: "static/kuvat"
 public_folder: "/kuvat"
 
 collections:
   - name: 'fi-about'
+    preview_path: '/fi/about'
     label: 'about (FI)'
     files:
       - file: 'content/fi/about.md'
@@ -15,20 +16,24 @@ collections:
         name: 'about'
         fields:
           - { label: 'Title', name: 'title', id: 'title', widget: 'string' }
-          - { label: 'Intro Video URL', name: 'introvideo_src', id: 'introvideo_src', widget: 'string' }
           - { label: 'Body', name: 'body', id: 'body', widget: 'markdown' }
+          - { label: 'Intro Video URL', name: 'introvideo_src', id: 'introvideo_src', widget: 'string' }
+
 
   - name: 'fi-gigs'
+    preview_path: '/fi/gigs'
     label: 'Performances (FI)'
     files:
       - file: 'content/fi/gigs.md'
         label: 'Gigs'
         name: 'gigs'
         fields:
+          - { label: 'Gig Title', name: 'title', widget: 'string' }
           - { label: 'Gig Image', name: 'gig_image', id: 'gig_image', widget: 'image' }
           - { label: 'Gig Description', name: 'gig_description', id: 'gig_description', widget: 'markdown' }
 
   - name: 'fi-diskografia'
+    preview_path: '/fi/diskografia'
     label: 'Diskografia (FI)'
     files:
       - file: 'content/fi/diskografia.md'
@@ -41,6 +46,7 @@ collections:
           - { label: 'Release Year', name: 'release_year', id: 'release_year', widget: 'string' }
 
   - name: 'fi-musicvideos'
+    preview_path: '/fi/musicvideos'
     label: 'Music Videos (FI)'
     files:
       - file: 'content/fi/musicvideos.md'
@@ -51,6 +57,7 @@ collections:
           - { label: 'Upload Date', name: 'upload_date', id: 'upload_date', widget: 'datetime' }
 
   - name: 'fi-media'
+    preview_path: '/fi/media'
     label: 'Media (FI)'
     files:
       - file: 'content/fi/media.md'
@@ -61,6 +68,7 @@ collections:
           - { label: 'Caption', name: 'caption', id: 'caption', widget: 'string' }
 
   - name: 'fi-contact'
+    preview_path: '/fi/contact'
     label: 'Contact (FI)'
     files:
       - file: 'content/fi/contact.md'
@@ -70,6 +78,7 @@ collections:
           - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
 
   - name: 'en-about'
+    preview_path: '/en/about'  
     label: 'about (EN)'
     files:
       - file: 'content/en/about.md'
@@ -77,20 +86,23 @@ collections:
         name: 'about'
         fields:
           - { label: 'Title', name: 'title', id: 'title', widget: 'string' }
-          - { label: 'Intro Video URL', name: 'introvideo_src', id: 'introvideo_src', widget: 'string' }
           - { label: 'Body', name: 'body', id: 'body', widget: 'markdown' }
+          - { label: 'Intro Video URL', name: 'introvideo_src', id: 'introvideo_src', widget: 'string' }
 
   - name: 'en-gigs'
+    preview_path: '/en/gigs'
     label: 'Performances (EN)'
     files:
       - file: 'content/en/gigs.md'
         label: 'Gigs'
         name: 'gigs'
         fields:
+          - { label: 'Gig Title', name: 'title', widget: 'string' }
           - { label: 'Gig Image', name: 'gig_image', id: 'gig_image', widget: 'image' }
           - { label: 'Gig Description', name: 'gig_description', id: 'gig_description', widget: 'markdown' }
 
   - name: 'en-diskografia'
+    preview_path: '/en/diskografia'
     label: 'Discography (EN)'
     files:
       - file: 'content/en/diskografia.md'
@@ -103,6 +115,7 @@ collections:
           - { label: 'Release Year', name: 'release_year', id: 'release_year', widget: 'string' }
 
   - name: 'en-musicvideos'
+    preview_path: '/en/musicvideos'  
     label: 'Music Videos (EN)'
     files:
       - file: 'content/en/musicvideos.md'
@@ -113,6 +126,7 @@ collections:
           - { label: 'Upload Date', name: 'upload_date', id: 'upload_date', widget: 'datetime' }
 
   - name: 'en-media'
+    preview_path: '/en/media'
     label: 'Media (EN)'
     files:
       - file: 'content/en/media.md'
@@ -123,6 +137,7 @@ collections:
           - { label: 'Caption', name: 'caption', id: 'caption', widget: 'string' }
 
   - name: 'en-contact'
+    preview_path: '/en/contact'
     label: 'Contact (EN)'
     files:
       - file: 'content/en/contact.md'
@@ -130,3 +145,4 @@ collections:
         name: 'contact'
         fields:
           - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
+
