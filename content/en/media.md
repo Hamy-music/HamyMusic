@@ -1,6 +1,6 @@
 ---
 title: Media
-description: "images for the media "
+description: "images for the media"
 ---
 
 ## FOR THE MEDIA
