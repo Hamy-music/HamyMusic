@@ -7,5 +7,5 @@ description: "keikat ja yhteydenotto hamymusic@outlook.com"
 
 > Aki Vähäsarja aka. HÄMY 
 
-> hamymusic@outlook.com
+> hamy.music@outlook.com
 
