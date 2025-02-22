@@ -7,5 +7,5 @@ description: "BOOKINGS AND CONTACT, Aki Vähäsarja aka. HÄMY, hamymusic@outloo
 
 > Aki Vähäsarja aka. HÄMY 
 
-> hamymusic@outlook.com
+> hamy.music@outlook.com
 
