@@ -1,20 +1,22 @@
 ---
-title: "Music Videos"
+title: Music Videos
 videos:
-  - video_id: "kjFzJ8qIYWI"
-    upload_date: "2024-12-10"
-  - video_id: "UfKH1HLMdpE"
-    upload_date: "2024-11-20"
-  - video_id: "NqRaE8mid3A"
-    upload_date: "2024-09-15"
-  - video_id: "F6_LBEGtINE"
-    upload_date: "2024-08-01"
-  - video_id: "uPxBttnunoI"
-    upload_date: "2023-07-12"
-  - video_id: "z4kWfA-c9Mk"
-    upload_date: "2023-05-30"
-  - video_id: "Gy0omY_BBeQ"
-    upload_date: "2023-03-17"
+  - video_id: kjFzJ8qIYWI
+    upload_date: 2024-12-10
+  - video_id: UfKH1HLMdpE
+    upload_date: 2024-11-20
+  - video_id: NqRaE8mid3A
+    upload_date: 2024-09-15
+  - video_id: F6_LBEGtINE
+    upload_date: 2024-08-01
+  - video_id: uPxBttnunoI
+    upload_date: 2023-07-12
+  - video_id: z4kWfA-c9Mk
+    upload_date: 2023-05-30
+  - video_id: Gy0omY_BBeQ
+    upload_date: 2023-03-17
+  - video_id: uePq_efTU3s
+    upload_date: 2025-03-03T14:02:00.000Z
 ---
 
 ## VIDEOS
