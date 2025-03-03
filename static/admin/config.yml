@@ -56,7 +56,7 @@ collections:
         label: 'Music Videos'
         name: 'musicvideos'
         fields:
-          - { label: 'Music Videos', name: 'musicvideos', id: 'musicvideos', widget: 'list', fields: [
+          - { label: 'videos', name: 'videos', id: 'videos', widget: 'list', fields: [
               { label: 'Video ID', name: 'video_id', widget: 'string' },
               { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
             ]
@@ -132,7 +132,7 @@ collections:
         label: 'Music Videos'
         name: 'musicvideos'
         fields:
-          - { label: 'Music Videos', name: 'musicvideos', id: 'musicvideos', widget: 'list', fields: [
+          - { label: 'videos', name: 'videos', id: 'videos', widget: 'list', fields: [
               { label: 'Video ID', name: 'video_id', widget: 'string' },
               { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
             ]
