@@ -25,6 +25,10 @@ albums:
     title: Otavasta Pohjoiseen
     type: albumi
     year: "2019"
+  - image: /kuvat/2020 Filip Smeds.jpg
+    title: Testi
+    type: single
+    year: "2025"
 ---
 
 ## DISKOGRAFIA
