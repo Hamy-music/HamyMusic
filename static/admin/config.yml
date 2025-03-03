@@ -84,6 +84,7 @@ collections:
         label: 'Contact'
         name: 'contact'
         fields:
+          - { label: 'Title', name: 'title', id: 'title', widget: 'string' }
           - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
 
 
@@ -165,5 +166,6 @@ collections:
         label: 'Contact'
         name: 'contact'
         fields:
+          - { label: 'Title', name: 'title', id: 'title', widget: 'string' }
           - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
 
