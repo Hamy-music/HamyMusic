@@ -81,8 +81,11 @@ collections:
         label: 'Contact'
         name: 'contact'
         fields:
-          - { label: 'Contact Information', name: 'contact_info', id: 'contact_info', widget: 'markdown' }
-
+          - { label: 'Media', name: 'media', id: 'media', widget: 'list', fields: [
+              { label: 'URL', name: 'url', widget: 'string' },
+              { label: 'Alt Text', name: 'alt', widget: 'string' }
+            ]
+          }
   - name: 'en-about'
     preview_path: '/en/about'  
     label: 'about (EN)'
@@ -146,8 +149,12 @@ collections:
         label: 'Media'
         name: 'media'
         fields:
-          - { label: 'Media Image', name: 'media_image', id: 'media_image', widget: 'image' }
-          - { label: 'Caption', name: 'caption', id: 'caption', widget: 'string' }
+          - { label: 'Media', name: 'media', id: 'media', widget: 'list', fields: [
+              { label: 'URL', name: 'url', widget: 'string' },
+              { label: 'Alt Text', name: 'alt', widget: 'string' }
+            ]
+          }
+         
 
   - name: 'en-contact'
     preview_path: '/en/contact'
