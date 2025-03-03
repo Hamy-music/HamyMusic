@@ -56,8 +56,11 @@ collections:
         label: 'Music Videos'
         name: 'musicvideos'
         fields:
-          - { label: 'Video ID', name: 'video_id', id: 'video_id', widget: 'string' }
-          - { label: 'Upload Date', name: 'upload_date', id: 'upload_date', widget: 'datetime' }
+          - { label: 'Music Videos', name: 'musicvideos', id: 'musicvideos', widget: 'list', fields: [
+              { label: 'Video ID', name: 'video_id', widget: 'string' },
+              { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
+            ]
+          }
 
   - name: 'fi-media'
     preview_path: '/fi/media'
@@ -129,8 +132,11 @@ collections:
         label: 'Music Videos'
         name: 'musicvideos'
         fields:
-          - { label: 'Video ID', name: 'video_id', id: 'video_id', widget: 'string' }
-          - { label: 'Upload Date', name: 'upload_date', id: 'upload_date', widget: 'datetime' }
+          - { label: 'Music Videos', name: 'musicvideos', id: 'musicvideos', widget: 'list', fields: [
+              { label: 'Video ID', name: 'video_id', widget: 'string' },
+              { label: 'Upload Date', name: 'upload_date', widget: 'datetime' }
+            ]
+          }
 
   - name: 'en-media'
     preview_path: '/en/media'
