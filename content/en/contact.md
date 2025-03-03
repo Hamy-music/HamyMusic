@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "BOOKINGS AND CONTACT, Aki Vähäsarja aka. HÄMY, hamymusic@outlook.com"
+description: "BOOKINGS AND CONTACT, Aki Vähäsarja aka. HÄMY, hamy.music@outlook.com"
 ---
 
 ## BOOKINGS AND CONTACT
