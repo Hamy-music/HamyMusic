@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "keikat ja yhteydenotto hamymusic@outlook.com"
+description: "keikat ja yhteydenotto hamy.music@outlook.com"
 ---
 
 ## KEIKAT JA YHTEYDENOTTO
