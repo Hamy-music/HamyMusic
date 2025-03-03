@@ -1,6 +1,8 @@
 ---
 title: "Contact"
-contact_info: |
+contact_info: BOOKINGS AND CONTACT, Aki Vähäsarja aka. HÄMY, hamy.music@outlook.com
+ 
+---
 
 ## BOOKINGS AND CONTACT
 
@@ -8,5 +10,5 @@ contact_info: |
 
  hamy.music@outlook.com
  
----
 
+ 
