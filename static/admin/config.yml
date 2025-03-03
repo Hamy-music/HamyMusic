@@ -44,6 +44,13 @@ collections:
           - { label: 'Album Title', name: 'album_title', id: 'album_title', widget: 'string' }
           - { label: 'Album Type', name: 'album_type', id: 'album_type', widget: 'select', options: ['single', 'albumi'] }
           - { label: 'Release Year', name: 'release_year', id: 'release_year', widget: 'string' }
+          - { label: 'Albums', name: 'albums', id: 'albums', widget: 'list', fields: [
+              { label: 'Image', name: 'image', widget: 'image' },
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Type', name: 'type', widget: 'select', options: ['single', 'albumi'] },
+              { label: 'Year', name: 'year', widget: 'string' }
+            ]
+          }
 
   - name: 'fi-musicvideos'
     preview_path: '/fi/musicvideos'
@@ -113,6 +120,14 @@ collections:
           - { label: 'Album Title', name: 'album_title', id: 'album_title', widget: 'string' }
           - { label: 'Album Type', name: 'album_type', id: 'album_type', widget: 'select', options: ['single', 'album'] }
           - { label: 'Release Year', name: 'release_year', id: 'release_year', widget: 'string' }
+          - { label: 'Albums', name: 'albums', id: 'albums', widget: 'list', fields: [
+              { label: 'Image', name: 'image', widget: 'image' },
+              { label: 'Title', name: 'title', widget: 'string' },
+              { label: 'Type', name: 'type', widget: 'select', options: ['single', 'album'] },
+              { label: 'Year', name: 'year', widget: 'string' }
+            ]
+          }
+
 
   - name: 'en-musicvideos'
     preview_path: '/en/musicvideos'  
