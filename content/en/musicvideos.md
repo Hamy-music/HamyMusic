@@ -15,8 +15,6 @@ videos:
     upload_date: 2023-05-30
   - video_id: Gy0omY_BBeQ
     upload_date: 2023-03-17
-  - video_id: uePq_efTU3s
-    upload_date: 2025-03-03T14:02:00.000Z
 ---
 
 ## VIDEOS
