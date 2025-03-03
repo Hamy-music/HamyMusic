@@ -28,9 +28,9 @@ collections:
         label: 'Gigs'
         name: 'gigs'
         fields:
-          - { label: 'Gig Title', name: 'title', widget: 'string' }
-          - { label: 'Gig Image', name: 'gig_image', id: 'gig_image', widget: 'image' }
-          - { label: 'Gig Description', name: 'gig_description', id: 'gig_description', widget: 'markdown' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', id: 'body', widget: 'markdown' }
+          
 
   - name: 'fi-diskografia'
     preview_path: '/fi/diskografia'
@@ -108,10 +108,9 @@ collections:
         label: 'Gigs'
         name: 'gigs'
         fields:
-          - { label: 'Gig Title', name: 'title', widget: 'string' }
-          - { label: 'Gig Image', name: 'gig_image', id: 'gig_image', widget: 'image' }
-          - { label: 'Gig Description', name: 'gig_description', id: 'gig_description', widget: 'markdown' }
-
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', id: 'body', widget: 'markdown' }
+          
   - name: 'en-diskografia'
     preview_path: '/en/diskografia'
     label: 'Discography (EN)'
