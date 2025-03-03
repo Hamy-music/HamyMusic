@@ -11,10 +11,6 @@ media:
     alt: "(C) Filip Smed"
 ---
 
-## Media
-
-{{< mediagrid >}}
----
 
 ## MEDIALLE
 
