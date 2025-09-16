@@ -1,6 +1,10 @@
 ---
 title: "Diskografia"
 albums:
+  - image: /kuvat/utu-750-x-750.jpg
+    title: Utu
+    type: single
+    year: "2025"
   - image: "/kuvat/Mitä me muistelemme kun kuolemme.jpg"
     title: "Mitä me muistelemme kun kuolemme"
     type: "single"
