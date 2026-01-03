@@ -1,6 +1,10 @@
 ---
 title: Diskografia
 albums:
+  - image: /kuvat/kulutustaidetta-750-x-750.jpg
+    title: Kulutustaidetta
+    type: albumi
+    year: "2026"
   - image: /kuvat/utu-750-x-750.jpg
     title: Utu
     type: single
