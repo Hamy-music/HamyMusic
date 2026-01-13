@@ -84,73 +84,60 @@
         <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
     </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const carousels = document.querySelectorAll('.video-carousel');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousels = document.querySelectorAll('.video-carousel');
 
-    carousels.forEach(function (carousel) {
-        const ul = carousel.querySelector('ul');
-        const nextBtn = carousel.querySelector('.next');
-        const prevBtn = carousel.querySelector('.prev');
-        const bullets = carousel.querySelectorAll('ol li');
-        const slides = carousel.querySelectorAll('ul li');
+            carousels.forEach(function (carousel) {
+                const ul = carousel.querySelector('ul');
+                const nextBtn = carousel.querySelector('.next');
+                const prevBtn = carousel.querySelector('.prev');
+                const bullets = carousel.querySelectorAll('ol li');
+                const slides = carousel.querySelectorAll('ul li');
 
-        if (slides.length < 2) return;
+                const setSelected = function () {
+                    const scrollLength = ul.querySelector('li:nth-child(2)').offsetLeft - ul.querySelector('li:nth-child(1)').offsetLeft;
+                    const nthChild = Math.round((ul.scrollLeft / scrollLength) + 1);
 
-        let currentIndex = 0;
+                    bullets.forEach(bullet => bullet.classList.remove('selected'));
+                    slides.forEach(slide => slide.classList.remove('selected'));
 
-        const slideWidth =
-            slides[1].offsetLeft - slides[0].offsetLeft;
+                    bullets[nthChild - 1].classList.add('selected');
+                    slides[nthChild - 1].classList.add('selected');
+                };
 
-        function updateSelected() {
-            bullets.forEach(b => b.classList.remove('selected'));
-            slides.forEach(s => s.classList.remove('selected'));
+                nextBtn.addEventListener('click', () => {
+                    ul.scrollBy({ left: ul.offsetWidth * 1, behavior: 'smooth' });
+                });
 
-            if (bullets[currentIndex]) bullets[currentIndex].classList.add('selected');
-            if (slides[currentIndex]) slides[currentIndex].classList.add('selected');
-        }
+                prevBtn.addEventListener('click', () => {
+                    ul.scrollBy({ left: -ul.offsetWidth * 1, behavior: 'smooth' });
+                });
 
-        function scrollToIndex(index) {
-            currentIndex = Math.max(0, Math.min(index, slides.length - 1));
-            ul.scrollTo({
-                left: slides[currentIndex].offsetLeft,
-                behavior: 'smooth'
+
+                ul.addEventListener('scroll', debounce(setSelected));
+
+                setSelected();
+
+                function debounce(fn) {
+                    let timeout;
+                    return function () {
+                        const context = this;
+                        const args = arguments;
+                        if (timeout) cancelAnimationFrame(timeout);
+                        timeout = requestAnimationFrame(() => fn.apply(context, args));
+                    };
+                }
+
+                bullets.forEach(function (bullet, index) {
+                    bullet.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        ul.scrollLeft = slides[index].offsetLeft;
+                    });
+                });
             });
-            updateSelected();
-        }
-
-        // NAPIT — yksi klikkaus = yksi video
-        nextBtn.addEventListener('click', () => {
-            scrollToIndex(currentIndex + 1);
         });
-
-        prevBtn.addEventListener('click', () => {
-            scrollToIndex(currentIndex - 1);
-        });
-
-        // BULLETIT
-        bullets.forEach((bullet, index) => {
-            bullet.addEventListener('click', (e) => {
-                e.preventDefault();
-                scrollToIndex(index);
-            });
-        });
-
-        // SCROLL / SWIPE
-        let scrollTimeout;
-        ul.addEventListener('scroll', () => {
-            clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(() => {
-                currentIndex = Math.round(ul.scrollLeft / slideWidth);
-                updateSelected();
-            }, 100);
-        });
-
-        // INIT
-        updateSelected();
-    });
-});
-</script>
+    </script>
 
 </body>
 
