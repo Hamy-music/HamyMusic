@@ -84,60 +84,54 @@
         <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const carousels = document.querySelectorAll('.video-carousel');
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const carousels = document.querySelectorAll('.video-carousel');
 
-            carousels.forEach(function (carousel) {
-                const ul = carousel.querySelector('ul');
-                const nextBtn = carousel.querySelector('.next');
-                const prevBtn = carousel.querySelector('.prev');
-                const bullets = carousel.querySelectorAll('ol li');
-                const slides = carousel.querySelectorAll('ul li');
+    carousels.forEach(function (carousel) {
+        const ul = carousel.querySelector('ul');
+        const bullets = carousel.querySelectorAll('ol li');
+        const slides = carousel.querySelectorAll('ul li');
 
-                const setSelected = function () {
-                    const scrollLength = ul.querySelector('li:nth-child(2)').offsetLeft - ul.querySelector('li:nth-child(1)').offsetLeft;
-                    const nthChild = Math.round((ul.scrollLeft / scrollLength) + 1);
+        if (slides.length < 2) return;
 
-                    bullets.forEach(bullet => bullet.classList.remove('selected'));
-                    slides.forEach(slide => slide.classList.remove('selected'));
+        const setSelected = function () {
+            const scrollLength =
+                slides[1].offsetLeft - slides[0].offsetLeft;
 
-                    bullets[nthChild - 1].classList.add('selected');
-                    slides[nthChild - 1].classList.add('selected');
-                };
+            const nthChild = Math.round(ul.scrollLeft / scrollLength);
 
-                nextBtn.addEventListener('click', () => {
-                    ul.scrollBy({ left: ul.offsetWidth * 1, behavior: 'smooth' });
-                });
+            bullets.forEach(bullet => bullet.classList.remove('selected'));
+            slides.forEach(slide => slide.classList.remove('selected'));
 
-                prevBtn.addEventListener('click', () => {
-                    ul.scrollBy({ left: -ul.offsetWidth * 1, behavior: 'smooth' });
-                });
+            if (bullets[nthChild]) bullets[nthChild].classList.add('selected');
+            if (slides[nthChild]) slides[nthChild].classList.add('selected');
+        };
 
+        ul.addEventListener('scroll', debounce(setSelected));
+        setSelected();
 
-                ul.addEventListener('scroll', debounce(setSelected));
+        function debounce(fn) {
+            let timeout;
+            return function () {
+                if (timeout) cancelAnimationFrame(timeout);
+                timeout = requestAnimationFrame(fn);
+            };
+        }
 
-                setSelected();
-
-                function debounce(fn) {
-                    let timeout;
-                    return function () {
-                        const context = this;
-                        const args = arguments;
-                        if (timeout) cancelAnimationFrame(timeout);
-                        timeout = requestAnimationFrame(() => fn.apply(context, args));
-                    };
-                }
-
-                bullets.forEach(function (bullet, index) {
-                    bullet.addEventListener('click', function (event) {
-                        event.preventDefault();
-                        ul.scrollLeft = slides[index].offsetLeft;
-                    });
+        bullets.forEach(function (bullet, index) {
+            bullet.addEventListener('click', function (event) {
+                event.preventDefault();
+                ul.scrollTo({
+                    left: slides[index].offsetLeft,
+                    behavior: 'smooth'
                 });
             });
         });
-    </script>
+    });
+});
+</script>
+
 
 </body>
 
