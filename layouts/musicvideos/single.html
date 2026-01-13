@@ -106,13 +106,26 @@
                     slides[nthChild - 1].classList.add('selected');
                 };
 
+                //nextBtn.addEventListener('click', () => {
+                //    ul.scrollBy({ left: ul.offsetWidth * 1, behavior: 'smooth' });
+                //});
+
+                //prevBtn.addEventListener('click', () => {
+                //    ul.scrollBy({ left: -ul.offsetWidth * 1, behavior: 'smooth' });
+                //});
+
+                const slideWidth =
+                    ul.querySelector('li:nth-child(2)').offsetLeft -
+                    ul.querySelector('li:nth-child(1)').offsetLeft;
+
                 nextBtn.addEventListener('click', () => {
-                    ul.scrollBy({ left: ul.offsetWidth * 1, behavior: 'smooth' });
+                    ul.scrollBy({ left: slideWidth, behavior: 'smooth' });
                 });
 
                 prevBtn.addEventListener('click', () => {
-                    ul.scrollBy({ left: -ul.offsetWidth * 1, behavior: 'smooth' });
+                    ul.scrollBy({ left: -slideWidth, behavior: 'smooth' });
                 });
+
 
                 ul.addEventListener('scroll', debounce(setSelected));
 
