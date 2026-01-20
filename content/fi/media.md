@@ -9,9 +9,9 @@ media:
     alt: (C) Samuel Vielma
   - url: /kuvat/2020 Filip Smeds.jpg
     alt: (C) Filip Smed
-  - url: /kuvat/taikasaari_130925_verttiluoma_2579.jpg
+  - url: static/kuvat/taikasaari_130925_verttiluoma_2579.jpg
     alt: (C) Vertti Luoma
-  - url: /kuvat/taikasaari_130925_verttiluoma_2579.jpg
+  - url: static/kuvat/taikasaari_130925_verttiluoma_2579.jpg
     alt: (C) Vertti Luoma
 ---
 
